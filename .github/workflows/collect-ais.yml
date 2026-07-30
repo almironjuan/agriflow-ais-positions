@@ -1,0 +1,39 @@
+name: Collect AIS positions
+
+on:
+  schedule:
+    - cron: "15 6,18 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ais-position-collector
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 28
+    steps:
+      - name: Check out archive
+        uses: actions/checkout@v4
+
+      - name: Collect verified AIS reports
+        env:
+          AISSTREAM_API_KEY: ${{ secrets.AISSTREAM_API_KEY }}
+          AIS_COLLECTION_MINUTES: "20"
+        run: node scripts/collect-ais.mjs
+
+      - name: Save updated positions
+        run: |
+          if git diff --quiet -- data/positions.json; then
+            echo "No archive changes"
+            exit 0
+          fi
+          git config user.name "AgriFlow AIS Collector"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/positions.json
+          git commit -m "Update verified AIS positions"
+          git push
