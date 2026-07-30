@@ -196,9 +196,15 @@ function listen(subscription, onMessage) {
     };
     const timer = setTimeout(finish, RUN_DURATION_MS);
     socket.addEventListener("open", () => socket.send(JSON.stringify(subscription)));
-    socket.addEventListener("message", (event) => {
+    socket.addEventListener("message", async (event) => {
       try {
-        onMessage(JSON.parse(String(event.data)));
+        const raw =
+          typeof event.data === "string"
+            ? event.data
+            : event.data instanceof Blob
+              ? await event.data.text()
+              : String(event.data);
+        onMessage(JSON.parse(raw));
       } catch {
         // Ignore malformed upstream messages.
       }
