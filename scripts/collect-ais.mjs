@@ -12,7 +12,6 @@ const POSITION_TYPES = [
   "StandardClassBPositionReport",
   "ExtendedClassBPositionReport",
 ];
-const ARGENTINA_BOX = [[[-41, -65], [-30, -54]]];
 const WORLD_BOX = [[[-90, -180], [90, 180]]];
 
 function cleanCell(value) {
@@ -91,12 +90,6 @@ function nameSimilarity(lineupName, aisName) {
 
 function unique(values) {
   return [...new Set(values.filter(Boolean))];
-}
-
-function chunk(values, size) {
-  return Array.from({ length: Math.ceil(values.length / size) }, (_, index) =>
-    values.slice(index * size, (index + 1) * size),
-  );
 }
 
 async function loadLineupNames() {
@@ -245,6 +238,16 @@ async function main() {
   }
 
   const trackedNames = [...byName.keys()];
+  const byNormalizedName = new Map(
+    trackedNames.map((vesselName) => [normalizeName(vesselName), vesselName]),
+  );
+  const namesByPrefix = new Map();
+  for (const vesselName of trackedNames) {
+    const prefix = normalizeName(vesselName).slice(0, 4);
+    const candidates = namesByPrefix.get(prefix) ?? [];
+    candidates.push(vesselName);
+    namesByPrefix.set(prefix, candidates);
+  }
   const byMmsi = new Map(
     [...byName.values()]
       .filter((vessel) => /^\d{9}$/.test(vessel.mmsi ?? ""))
@@ -257,8 +260,12 @@ async function main() {
     const position = readPosition(message);
     if (!position) return;
     received += 1;
+    const normalizedAisName = normalizeName(position.aisName);
+    const fuzzyCandidates = namesByPrefix.get(normalizedAisName.slice(0, 4)) ?? [];
     const vesselName =
-      byMmsi.get(position.mmsi) ?? bestNameMatch(trackedNames, position.aisName);
+      byMmsi.get(position.mmsi) ??
+      byNormalizedName.get(normalizedAisName) ??
+      bestNameMatch(fuzzyCandidates, position.aisName);
     if (!vesselName) return;
 
     const existing = byName.get(vesselName) ?? { vesselName };
@@ -289,20 +296,7 @@ async function main() {
     APIKey: apiKey,
     FilterMessageTypes: POSITION_TYPES,
   };
-  const subscriptions = [
-    listen({ ...baseSubscription, BoundingBoxes: ARGENTINA_BOX }, onMessage),
-    ...chunk([...byMmsi.keys()], 50).map((mmsi) =>
-      listen(
-        {
-          ...baseSubscription,
-          BoundingBoxes: WORLD_BOX,
-          FiltersShipMMSI: mmsi,
-        },
-        onMessage,
-      ),
-    ),
-  ];
-  await Promise.all(subscriptions);
+  await listen({ ...baseSubscription, BoundingBoxes: WORLD_BOX }, onMessage);
 
   const output = {
     generatedAt: new Date().toISOString(),
@@ -313,7 +307,8 @@ async function main() {
       trackedVessels: byName.size,
       messagesReceived: received,
       matchedMessages: matched,
-      note: "Positions are verified AIS reports. Missing vessels are not estimated.",
+      note:
+        "Positions are verified global AIS reports. Missing vessels are not estimated.",
     },
     vessels: [...byName.values()].sort((left, right) =>
       left.vesselName.localeCompare(right.vesselName),
