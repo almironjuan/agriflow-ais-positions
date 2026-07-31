@@ -4,6 +4,12 @@ on:
   schedule:
     - cron: "15 6,18 * * *"
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/collect-ais.mjs"
+      - ".github/workflows/collect-ais.yml"
 
 permissions:
   contents: write
