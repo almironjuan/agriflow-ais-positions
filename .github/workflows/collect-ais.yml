@@ -38,6 +38,7 @@ jobs:
         run: node scripts/collect-ais.mjs
 
       - name: Save updated positions
+        if: always()
         run: |
           if git diff --quiet -- data/positions.json; then
             echo "No archive changes"
@@ -48,3 +49,8 @@ jobs:
           git add data/positions.json
           git commit -m "Update verified AIS positions"
           git push
+
+      - name: Verify live AIS input
+        if: always()
+        run: |
+          node -e "const fs=require('fs');const data=JSON.parse(fs.readFileSync('data/positions.json','utf8'));const count=data.collector?.messagesReceived||0;console.log('Valid AIS messages:',count);if(count===0)process.exit(1)"
