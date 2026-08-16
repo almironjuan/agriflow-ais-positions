@@ -15,6 +15,9 @@ const POSITION_TYPES = [
 const STATIC_TYPES = ["ShipStaticData", "StaticDataReport"];
 const AIS_MESSAGE_TYPES = [...POSITION_TYPES, ...STATIC_TYPES];
 const WORLD_BOX = [[[-90, -180], [90, 180]]];
+const ARGENTINA_APPROACH_BOX = [[[-56, -76], [-20, -45]]];
+const INACTIVITY_TIMEOUT_MS = 90_000;
+const RECONNECT_DELAY_MS = 2_000;
 
 function cleanCell(value) {
   return value
@@ -218,44 +221,111 @@ function readPosition(message) {
   };
 }
 
-function listen(subscription, onMessage) {
+function decodeWebSocketData(data) {
+  if (typeof data === "string") return Promise.resolve(data);
+  if (data instanceof Blob) return data.text();
+  if (data instanceof ArrayBuffer) return Promise.resolve(new TextDecoder().decode(data));
+  if (ArrayBuffer.isView(data)) {
+    return Promise.resolve(new TextDecoder().decode(data));
+  }
+  return Promise.resolve(String(data));
+}
+
+function listenOnce({ label, subscription, onMessage, deadline, diagnostics }) {
   return new Promise((resolve) => {
     const socket = new WebSocket("wss://stream.aisstream.io/v0/stream");
     let settled = false;
-    const finish = () => {
+    let inactivityTimer;
+    const stream = diagnostics.streams[label] ?? {
+      connections: 0,
+      frames: 0,
+      validMessages: 0,
+      parseErrors: 0,
+      inactiveReconnects: 0,
+      closes: [],
+    };
+    diagnostics.streams[label] = stream;
+
+    const resetInactivityTimer = () => {
+      clearTimeout(inactivityTimer);
+      inactivityTimer = setTimeout(() => {
+        stream.inactiveReconnects += 1;
+        try {
+          socket.close(4000, "No AIS frames received");
+        } catch {
+          // Reconnect below if the upstream socket is already gone.
+        }
+      }, Math.min(INACTIVITY_TIMEOUT_MS, Math.max(1, deadline - Date.now())));
+    };
+
+    const finish = (result) => {
       if (settled) return;
       settled = true;
+      clearTimeout(inactivityTimer);
+      clearTimeout(deadlineTimer);
       try {
         socket.close(1000, "Collection complete");
       } catch {
         // The upstream may already be closed.
       }
-      resolve();
+      resolve(result);
     };
-    const timer = setTimeout(finish, RUN_DURATION_MS);
-    socket.addEventListener("open", () => socket.send(JSON.stringify(subscription)));
+    const deadlineTimer = setTimeout(
+      () => finish({ reason: "deadline" }),
+      Math.max(1, deadline - Date.now()),
+    );
+
+    socket.addEventListener("open", () => {
+      stream.connections += 1;
+      socket.send(JSON.stringify(subscription));
+      resetInactivityTimer();
+      console.log(`[${label}] subscription sent`);
+    });
     socket.addEventListener("message", async (event) => {
+      stream.frames += 1;
+      resetInactivityTimer();
       try {
-        const raw =
-          typeof event.data === "string"
-            ? event.data
-            : event.data instanceof Blob
-              ? await event.data.text()
-              : String(event.data);
-        onMessage(JSON.parse(raw));
-      } catch {
-        // Ignore malformed upstream messages.
+        const raw = await decodeWebSocketData(event.data);
+        const parsed = JSON.parse(raw);
+        if (!parsed?.MessageType) {
+          diagnostics.serverResponses.push(raw.slice(0, 300));
+          console.warn(`[${label}] non-AIS response: ${raw.slice(0, 300)}`);
+          return;
+        }
+        stream.validMessages += 1;
+        onMessage(parsed);
+      } catch (error) {
+        stream.parseErrors += 1;
+        console.warn(`[${label}] message parse failed: ${error instanceof Error ? error.message : error}`);
       }
     });
-    socket.addEventListener("close", () => {
-      clearTimeout(timer);
-      finish();
+    socket.addEventListener("close", (event) => {
+      stream.closes.push({ code: event.code, reason: event.reason || "No reason" });
+      console.warn(`[${label}] closed ${event.code}: ${event.reason || "No reason"}`);
+      finish({ reason: "close", code: event.code });
     });
     socket.addEventListener("error", () => {
-      clearTimeout(timer);
-      finish();
+      diagnostics.connectionErrors += 1;
+      console.warn(`[${label}] websocket error`);
+      finish({ reason: "error" });
     });
   });
+}
+
+async function listenWithReconnect(options) {
+  while (Date.now() < options.deadline) {
+    const result = await listenOnce(options);
+    if (result.reason === "deadline" || Date.now() >= options.deadline) return;
+    await new Promise((resolve) => setTimeout(resolve, RECONNECT_DELAY_MS));
+  }
+}
+
+function chunks(values, size) {
+  const result = [];
+  for (let index = 0; index < values.length; index += size) {
+    result.push(values.slice(index, index + size));
+  }
+  return result;
 }
 
 async function main() {
@@ -303,6 +373,12 @@ async function main() {
   let matched = 0;
   let identityMessages = 0;
   let identitiesLearned = 0;
+  const diagnostics = {
+    strategy: "Argentina regional + known MMSI + global static discovery",
+    connectionErrors: 0,
+    serverResponses: [],
+    streams: {},
+  };
 
   const resolveVesselName = (mmsi, aisName) => {
     const normalizedAisName = normalizeName(aisName);
@@ -382,9 +458,47 @@ async function main() {
 
   const baseSubscription = {
     APIKey: apiKey,
-    FilterMessageTypes: AIS_MESSAGE_TYPES,
   };
-  await listen({ ...baseSubscription, BoundingBoxes: WORLD_BOX }, onMessage);
+  const deadline = Date.now() + RUN_DURATION_MS;
+  const currentLineup = new Set(lineupNames);
+  const knownMmsi = unique(
+    [...byName.values()]
+      .filter((vessel) => currentLineup.has(vessel.vesselName))
+      .map((vessel) => vessel.mmsi)
+      .filter((mmsi) => /^\d{9}$/.test(mmsi ?? "")),
+  );
+  const subscriptions = [
+    {
+      label: "argentina-regional",
+      subscription: {
+        ...baseSubscription,
+        BoundingBoxes: ARGENTINA_APPROACH_BOX,
+        FilterMessageTypes: AIS_MESSAGE_TYPES,
+      },
+    },
+    {
+      label: "global-static-discovery",
+      subscription: {
+        ...baseSubscription,
+        BoundingBoxes: WORLD_BOX,
+        FilterMessageTypes: STATIC_TYPES,
+      },
+    },
+    ...chunks(knownMmsi, 50).map((mmsiChunk, index) => ({
+      label: `known-mmsi-${index + 1}`,
+      subscription: {
+        ...baseSubscription,
+        BoundingBoxes: WORLD_BOX,
+        FiltersShipMMSI: mmsiChunk,
+        FilterMessageTypes: AIS_MESSAGE_TYPES,
+      },
+    })),
+  ];
+  await Promise.all(
+    subscriptions.map(({ label, subscription }) =>
+      listenWithReconnect({ label, subscription, onMessage, deadline, diagnostics }),
+    ),
+  );
 
   const output = {
     generatedAt: new Date().toISOString(),
@@ -398,8 +512,11 @@ async function main() {
       staticIdentityMessages: identityMessages,
       identitiesLearned,
       identifiedVessels: [...byName.values()].filter((vessel) => vessel.mmsi).length,
+      diagnostics,
       note:
-        "Positions are verified global AIS reports. Missing vessels are not estimated.",
+        received > 0
+          ? "Positions are verified AIS reports. Missing vessels are not estimated."
+          : "AISStream returned no valid messages. Existing positions are historical and were not refreshed.",
     },
     vessels: [...byName.values()].sort((left, right) =>
       left.vesselName.localeCompare(right.vesselName),
