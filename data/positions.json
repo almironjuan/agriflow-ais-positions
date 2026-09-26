@@ -1,24 +1,24 @@
 {
-  "generatedAt": "2026-09-25T21:53:48.698Z",
+  "generatedAt": "2026-09-26T11:43:27.015Z",
   "collector": {
-    "startedAt": "2026-09-25T21:33:47.133Z",
+    "startedAt": "2026-09-26T11:23:24.231Z",
     "durationMinutes": 20,
     "lineupVessels": 182,
-    "trackedVessels": 597,
-    "messagesReceived": 40471,
-    "matchedMessages": 233,
-    "staticIdentityMessages": 39558,
-    "identitiesLearned": 6,
-    "identifiedVessels": 394,
+    "trackedVessels": 557,
+    "messagesReceived": 19927,
+    "matchedMessages": 190,
+    "staticIdentityMessages": 19033,
+    "identitiesLearned": 0,
+    "identifiedVessels": 375,
     "diagnostics": {
       "strategy": "Argentina regional + known MMSI + global static discovery",
-      "connectionErrors": 958,
+      "connectionErrors": 948,
       "serverResponses": [],
       "streams": {
         "argentina-regional": {
           "connections": 1,
-          "frames": 1006,
-          "validMessages": 1006,
+          "frames": 983,
+          "validMessages": 983,
           "parseErrors": 0,
           "inactiveReconnects": 0,
           "closes": [
@@ -30,8 +30,8 @@
         },
         "global-static-discovery": {
           "connections": 1,
-          "frames": 39376,
-          "validMessages": 39376,
+          "frames": 18837,
+          "validMessages": 18837,
           "parseErrors": 0,
           "inactiveReconnects": 0,
           "closes": [
@@ -43,10 +43,10 @@
         },
         "known-mmsi-1": {
           "connections": 1,
-          "frames": 89,
-          "validMessages": 89,
+          "frames": 45,
+          "validMessages": 45,
           "parseErrors": 0,
-          "inactiveReconnects": 0,
+          "inactiveReconnects": 1,
           "closes": [
             {
               "code": 1006,
@@ -55,12 +55,21 @@
           ]
         },
         "known-mmsi-2": {
-          "connections": 0,
-          "frames": 0,
-          "validMessages": 0,
+          "connections": 2,
+          "frames": 62,
+          "validMessages": 62,
           "parseErrors": 0,
-          "inactiveReconnects": 0,
-          "closes": []
+          "inactiveReconnects": 1,
+          "closes": [
+            {
+              "code": 1006,
+              "reason": "No reason"
+            },
+            {
+              "code": 1006,
+              "reason": "No reason"
+            }
+          ]
         }
       }
     },
@@ -69,7 +78,7 @@
   "vessels": [
     {
       "vesselName": "19 MAYIS",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "23 NISAN",
@@ -133,7 +142,7 @@
     },
     {
       "vesselName": "ADVENTURER",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "ADVENTURE",
       "mmsi": "244850402",
       "imo": null,
@@ -152,20 +161,8 @@
       "source": "AISStream"
     },
     {
-      "vesselName": "AERIKO",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z",
-      "aisName": "AERIKO",
-      "mmsi": "239105200",
-      "imo": null,
-      "callsign": "SY7343",
-      "aisDestination": null,
-      "shipType": 0,
-      "identityReportedAt": "2026-09-25 11:57:29.415712464 +0000 UTC",
-      "identitySource": "AISStream static data"
-    },
-    {
       "vesselName": "AFRICAN MARGAUX",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "AFRICAN QUAIL",
@@ -208,7 +205,7 @@
       "callsign": null,
       "aisDestination": null,
       "shipType": 0,
-      "identityReportedAt": "2026-09-02 11:33:52.983044415 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:34:27.204939329 +0000 UTC",
       "identitySource": "AISStream static data"
     },
     {
@@ -249,7 +246,7 @@
     },
     {
       "vesselName": "AGIOS LAZAROS",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "AGIOS NIKOLAOS",
@@ -321,7 +318,7 @@
     },
     {
       "vesselName": "ALIKI PERROTIS",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "ALJAZI",
@@ -368,24 +365,12 @@
       "identitySource": "AISStream static data"
     },
     {
-      "vesselName": "ANADOLU S",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z",
-      "aisName": "ANADOLU S",
-      "mmsi": "373312000",
-      "imo": "9667758",
-      "callsign": "3FDI7",
-      "aisDestination": "RUARK",
-      "shipType": 79,
-      "identityReportedAt": "2026-09-16 11:50:47.075422277 +0000 UTC",
-      "identitySource": "AISStream static data"
-    },
-    {
       "vesselName": "ANDONIS",
       "lastLineupSeenAt": "2026-09-22T11:36:17.380Z"
     },
     {
       "vesselName": "ANEMON",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "ANEMONE",
       "mmsi": "533132101",
       "imo": null,
@@ -401,20 +386,6 @@
       "course": 360,
       "reportedAt": "2026-09-19 20:53:14.896432722 +0000 UTC",
       "receivedAt": "2026-09-19T20:56:26.785Z",
-      "source": "AISStream"
-    },
-    {
-      "vesselName": "ANGIE",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z",
-      "aisName": "ANGIE",
-      "mmsi": "265788510",
-      "latitude": 55.58432,
-      "longitude": 12.9165,
-      "speed": 0,
-      "heading": 314.2,
-      "course": 314.2,
-      "reportedAt": "2026-08-05 09:22:32.478083382 +0000 UTC",
-      "receivedAt": "2026-08-05T09:22:34.366Z",
       "source": "AISStream"
     },
     {
@@ -473,7 +444,7 @@
     },
     {
       "vesselName": "AP IMPERIAL",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "AP IMPERIAL",
       "mmsi": "238067000",
       "imo": "1091173",
@@ -492,20 +463,8 @@
       "source": "AISStream"
     },
     {
-      "vesselName": "AP KUPARI",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z",
-      "aisName": "AP KUPARI",
-      "mmsi": "238059000",
-      "imo": "9489168",
-      "callsign": "9AA7024",
-      "aisDestination": "FOR ORDER",
-      "shipType": 70,
-      "identityReportedAt": "2026-09-15 11:53:06.429176796 +0000 UTC",
-      "identitySource": "AISStream static data"
-    },
-    {
       "vesselName": "APJ PRITI 2",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "APJ PRITI 2",
       "mmsi": "419002044",
       "latitude": -33.70681,
@@ -525,7 +484,7 @@
     },
     {
       "vesselName": "APOGEE ENDEAVOUR",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "APOGEE ENDEAVOUR",
       "mmsi": "372612000",
       "imo": "9553141",
@@ -545,7 +504,7 @@
     },
     {
       "vesselName": "APOGEE SPIRIT",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "APOGEE SPIRIT",
       "mmsi": "355174000",
       "imo": "9561875",
@@ -603,27 +562,7 @@
     },
     {
       "vesselName": "AQUAVITA ETERNITY",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
-    },
-    {
-      "vesselName": "ARDMORE EXPLORER",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z",
-      "aisName": "ARDMORE EXPORTER",
-      "mmsi": "538005089",
-      "latitude": 36.31983,
-      "longitude": 16.12309,
-      "speed": 0.5,
-      "heading": 189,
-      "course": 103.4,
-      "reportedAt": "2026-08-05 09:23:24.218710957 +0000 UTC",
-      "receivedAt": "2026-08-05T09:23:26.227Z",
-      "source": "AISStream",
-      "imo": "9654775",
-      "callsign": "V7AX7",
-      "aisDestination": "ALIAGA",
-      "shipType": 80,
-      "identityReportedAt": "2026-09-19 11:02:53.854099027 +0000 UTC",
-      "identitySource": "AISStream static data"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "ARGO B",
@@ -696,10 +635,6 @@
       "lastLineupSeenAt": "2026-08-21T07:06:39.431Z"
     },
     {
-      "vesselName": "ASL ARK",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z"
-    },
-    {
       "vesselName": "ASP RAINBOW",
       "lastLineupSeenAt": "2026-09-22T11:36:17.380Z",
       "aisName": "ASP RAINBOW",
@@ -741,23 +676,11 @@
     },
     {
       "vesselName": "ASTRO CASTOR",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
-    },
-    {
-      "vesselName": "ASTROS",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z",
-      "aisName": "ASTROS",
-      "mmsi": "677030700",
-      "imo": "9522439",
-      "callsign": "5IM407",
-      "aisDestination": "GR KLM",
-      "shipType": 70,
-      "identityReportedAt": "2026-09-13 12:07:57.795343076 +0000 UTC",
-      "identitySource": "AISStream static data"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "AURIGA STAR",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "BAHIA",
@@ -781,7 +704,7 @@
     },
     {
       "vesselName": "BAHRI ARASCO",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "BAHRI ARASCO",
       "mmsi": "403711810",
       "imo": "9660516",
@@ -816,18 +739,6 @@
       "identitySource": "AISStream static data"
     },
     {
-      "vesselName": "BALTIC ACE",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z",
-      "aisName": "BALTICA",
-      "mmsi": "265509180",
-      "imo": "8010673",
-      "callsign": "SJOY",
-      "aisDestination": "FAIRWAYMAINTENANCE",
-      "shipType": 99,
-      "identityReportedAt": "2026-09-25 21:42:11.148161543 +0000 UTC",
-      "identitySource": "AISStream static data"
-    },
-    {
       "vesselName": "BALTIC BAY",
       "lastLineupSeenAt": "2026-08-27T17:37:24.429Z",
       "aisName": "BALTIC BAY",
@@ -857,15 +768,15 @@
     },
     {
       "vesselName": "BANGLAR PROGOTI",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "BAO LUCKY",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "BBG SINGAPORE",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "BBG SINGAPORE",
       "mmsi": "636020828",
       "latitude": -34.18563,
@@ -911,11 +822,11 @@
     },
     {
       "vesselName": "BC PISTI",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "BEATRICE",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "BEATRICE",
       "mmsi": "244180651",
       "imo": null,
@@ -924,13 +835,13 @@
       "shipType": 0,
       "identityReportedAt": "2026-09-25 21:40:57.887414075 +0000 UTC",
       "identitySource": "AISStream static data",
-      "latitude": 52.45944,
-      "longitude": 4.55895,
+      "latitude": 52.45945,
+      "longitude": 4.55894,
       "speed": 0,
       "heading": 29.6,
       "course": 29.6,
-      "reportedAt": "2026-09-25 21:48:39.648491548 +0000 UTC",
-      "receivedAt": "2026-09-25T21:48:41.838Z",
+      "reportedAt": "2026-09-26 11:33:40.210988378 +0000 UTC",
+      "receivedAt": "2026-09-26T11:33:41.931Z",
       "source": "AISStream"
     },
     {
@@ -955,7 +866,7 @@
     },
     {
       "vesselName": "BELTOKYO",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "BELTOKYO",
       "mmsi": "259168000",
       "imo": "9916238",
@@ -995,7 +906,7 @@
     },
     {
       "vesselName": "BERGE JUNGFRAU",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "BERGE JUNGFRAU",
       "mmsi": "232059113",
       "latitude": -34.6616,
@@ -1009,36 +920,42 @@
     },
     {
       "vesselName": "BERGE SNAEFELL",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "BERGE SNAEFELL",
       "mmsi": "232012490",
-      "latitude": -33.18302,
-      "longitude": -60.35377,
-      "speed": 10.8,
-      "heading": 255,
-      "course": 256,
-      "reportedAt": "2026-09-25 21:37:20.721492141 +0000 UTC",
-      "receivedAt": "2026-09-25T21:37:22.519Z",
-      "source": "AISStream"
+      "latitude": -32.6575,
+      "longitude": -60.73455,
+      "speed": 0,
+      "heading": 319,
+      "course": 38.4,
+      "reportedAt": "2026-09-26 11:31:32.100141595 +0000 UTC",
+      "receivedAt": "2026-09-26T11:31:33.866Z",
+      "source": "AISStream",
+      "imo": "9816593",
+      "callsign": "MCFG4",
+      "aisDestination": "ARSLO",
+      "shipType": 70,
+      "identityReportedAt": "2026-09-26 11:31:13.543859729 +0000 UTC",
+      "identitySource": "AISStream static data"
     },
     {
       "vesselName": "BINNUR C",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "BINNUR C",
       "mmsi": "538002179",
-      "latitude": -34.02525,
-      "longitude": -58.56976,
-      "speed": 9.6,
-      "heading": 273,
-      "course": 278.1,
-      "reportedAt": "2026-09-24 21:38:01.355248399 +0000 UTC",
-      "receivedAt": "2026-09-24T21:38:03.175Z",
+      "latitude": -33.00892,
+      "longitude": -60.59848,
+      "speed": 0,
+      "heading": 345,
+      "course": 235.7,
+      "reportedAt": "2026-09-26 11:42:45.752456761 +0000 UTC",
+      "receivedAt": "2026-09-26T11:42:47.611Z",
       "source": "AISStream",
       "imo": "9261023",
       "callsign": "V7UJ8",
       "aisDestination": "AR ROS",
       "shipType": 70,
-      "identityReportedAt": "2026-09-25 21:53:20.130000674 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:41:20.134121942 +0000 UTC",
       "identitySource": "AISStream static data"
     },
     {
@@ -1063,7 +980,7 @@
     },
     {
       "vesselName": "BLESSED LUCK",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "BLUE IONIAN",
@@ -1074,55 +991,35 @@
       "callsign": "V7A5557",
       "aisDestination": "BRSSZ",
       "shipType": 79,
-      "identityReportedAt": "2026-09-24 21:31:22.567255171 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:37:22.544169205 +0000 UTC",
       "identitySource": "AISStream static data",
-      "latitude": -23.8769,
-      "longitude": -46.37368,
+      "latitude": -23.87675,
+      "longitude": -46.37387,
       "speed": 0,
       "heading": 206,
-      "course": 151,
-      "reportedAt": "2026-09-25 21:38:13.422748232 +0000 UTC",
-      "receivedAt": "2026-09-25T21:38:15.069Z",
+      "course": 227,
+      "reportedAt": "2026-09-26 11:38:13.413605023 +0000 UTC",
+      "receivedAt": "2026-09-26T11:38:15.306Z",
       "source": "AISStream"
     },
     {
-      "vesselName": "BLUE SAPPHIRE",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z",
-      "aisName": "BLUE SAPPHIRE",
-      "mmsi": "341776000",
-      "latitude": 36.44615,
-      "longitude": 28.23187,
-      "speed": 0,
-      "heading": 178,
-      "course": 360,
-      "reportedAt": "2026-08-03 20:00:10.479495535 +0000 UTC",
-      "receivedAt": "2026-08-03T20:00:12.815Z",
-      "source": "AISStream",
-      "imo": "7822457",
-      "callsign": "V4XZ4",
-      "aisDestination": "GRRHO",
-      "shipType": 60,
-      "identityReportedAt": "2026-09-21 13:02:44.374058381 +0000 UTC",
-      "identitySource": "AISStream static data"
-    },
-    {
       "vesselName": "BOCHEM BUCEPHALAS",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "BOCHEM BUCEPHALAS",
       "mmsi": "477142400",
-      "latitude": -32.8503,
-      "longitude": -60.68967,
-      "speed": 8.8,
-      "heading": 345,
-      "course": 343.5,
-      "reportedAt": "2026-09-25 21:50:30.218492043 +0000 UTC",
-      "receivedAt": "2026-09-25T21:50:32.076Z",
+      "latitude": -32.66104,
+      "longitude": -60.73137,
+      "speed": 0,
+      "heading": 332,
+      "course": 360,
+      "reportedAt": "2026-09-26 11:39:21.664956858 +0000 UTC",
+      "receivedAt": "2026-09-26T11:39:22.969Z",
       "source": "AISStream",
       "imo": "9760550",
       "callsign": "VRQY6",
       "aisDestination": "ARSLO",
       "shipType": 82,
-      "identityReportedAt": "2026-09-25 21:50:12.771049521 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:38:12.777628997 +0000 UTC",
       "identitySource": "AISStream static data"
     },
     {
@@ -1164,12 +1061,8 @@
       "identitySource": "AISStream static data"
     },
     {
-      "vesselName": "BOSTON HARMONY",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z"
-    },
-    {
       "vesselName": "BOW ARCHITECT",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "BOW CECIL",
@@ -1188,7 +1081,7 @@
       "callsign": "LAGU5",
       "aisDestination": "NLRTM",
       "shipType": 80,
-      "identityReportedAt": "2026-09-25 21:47:01.693578081 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:41:46.268892128 +0000 UTC",
       "identitySource": "AISStream static data"
     },
     {
@@ -1221,7 +1114,7 @@
     },
     {
       "vesselName": "BOW PROSPER",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "BRAVE ARSENAL",
@@ -1245,7 +1138,7 @@
     },
     {
       "vesselName": "BRAVE QUEST",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "BRIGHT FALCON",
@@ -1287,7 +1180,7 @@
     },
     {
       "vesselName": "BUILDER",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "BULK ITALY",
@@ -1399,16 +1292,16 @@
     },
     {
       "vesselName": "CAPE GULL",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "CAPE GULL",
       "mmsi": "255915928",
-      "latitude": -33.36326,
-      "longitude": -60.13523,
+      "latitude": -33.35051,
+      "longitude": -60.17607,
       "speed": 0,
-      "heading": 303,
-      "course": 334.5,
-      "reportedAt": "2026-09-24 11:56:41.927922332 +0000 UTC",
-      "receivedAt": "2026-09-24T11:56:43.841Z",
+      "heading": 307,
+      "course": 43.3,
+      "reportedAt": "2026-09-26 11:35:44.490822956 +0000 UTC",
+      "receivedAt": "2026-09-26T11:35:46.294Z",
       "source": "AISStream",
       "imo": "9674804",
       "callsign": "CQ2386",
@@ -1439,7 +1332,7 @@
     },
     {
       "vesselName": "CAPETAN VASSILIS II",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "CAPRI ISLAND",
@@ -1457,7 +1350,7 @@
     },
     {
       "vesselName": "CAPTAIN GEORGE",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "CAPTAIN GEORGE",
       "mmsi": "210828000",
       "latitude": -34.83672,
@@ -1522,7 +1415,7 @@
       "callsign": "9HA4113",
       "aisDestination": "GBPFT<>NLRTM BRITHVN",
       "shipType": 0,
-      "identityReportedAt": "2026-09-24 11:52:10.288139723 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:38:21.250157151 +0000 UTC",
       "identitySource": "AISStream static data",
       "latitude": 51.89728,
       "longitude": 4.23324,
@@ -1542,7 +1435,7 @@
       "callsign": "PI3364",
       "aisDestination": null,
       "shipType": 79,
-      "identityReportedAt": "2026-09-25 21:45:50.509776942 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:40:02.059885511 +0000 UTC",
       "identitySource": "AISStream static data",
       "latitude": 53.31339,
       "longitude": 6.92792,
@@ -1617,7 +1510,7 @@
     },
     {
       "vesselName": "CHASE OCEAN",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "CHASSELAS",
@@ -1641,11 +1534,11 @@
     },
     {
       "vesselName": "CHICAGO HARMONY",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "CHOLA INTEGRITY",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "CHUMERNA",
@@ -1677,22 +1570,22 @@
     },
     {
       "vesselName": "CINDY GLORY",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "CINDY GLORY",
       "mmsi": "538010355",
-      "latitude": -32.64891,
+      "latitude": -32.64888,
       "longitude": -60.74304,
       "speed": 0,
       "heading": 329,
       "course": 218.8,
-      "reportedAt": "2026-09-25 21:51:35.732067114 +0000 UTC",
-      "receivedAt": "2026-09-25T21:51:37.664Z",
+      "reportedAt": "2026-09-26 11:42:39.900601984 +0000 UTC",
+      "receivedAt": "2026-09-26T11:42:41.701Z",
       "source": "AISStream",
       "imo": "9952945",
       "callsign": "V7A5934",
       "aisDestination": "ARSLO",
       "shipType": 80,
-      "identityReportedAt": "2026-09-24 11:45:20.137745035 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:33:20.925972989 +0000 UTC",
       "identitySource": "AISStream static data"
     },
     {
@@ -1723,15 +1616,15 @@
     },
     {
       "vesselName": "CL YINGNA HE",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "CL ZENITH",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "CL ZHANJIANG",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "CLARABELLE",
@@ -1751,7 +1644,7 @@
     },
     {
       "vesselName": "COMMANDER K",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "COMMANDER",
       "mmsi": "368206360",
       "imo": null,
@@ -1787,19 +1680,7 @@
     },
     {
       "vesselName": "CORESHIP OL",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
-    },
-    {
-      "vesselName": "COSCO SHIPPING VISION",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z",
-      "aisName": "COSCOSHIPPING VISION",
-      "mmsi": "477696900",
-      "imo": "9881677",
-      "callsign": "VRTZ4",
-      "aisDestination": "SG SIN",
-      "shipType": 70,
-      "identityReportedAt": "2026-08-25 19:15:23.934456002 +0000 UTC",
-      "identitySource": "AISStream static data"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "CRIMSON SAPPHIRE",
@@ -1824,18 +1705,6 @@
       "reportedAt": "2026-09-17 11:55:00.740176167 +0000 UTC",
       "receivedAt": "2026-09-17T11:56:43.639Z",
       "source": "AISStream"
-    },
-    {
-      "vesselName": "CRYSTAL PIONEER",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z",
-      "aisName": "CRYSTAL PIONEER",
-      "mmsi": "319600000",
-      "imo": "9363118",
-      "callsign": "ZCYA",
-      "aisDestination": "SG SIN PEBGB",
-      "shipType": 70,
-      "identityReportedAt": "2026-09-18 20:57:08.23867983 +0000 UTC",
-      "identitySource": "AISStream static data"
     },
     {
       "vesselName": "CS CAPRICE",
@@ -1879,7 +1748,7 @@
     },
     {
       "vesselName": "CYMONA PRIDE",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "CYMONA PRIDE",
       "mmsi": "212237000",
       "latitude": -34.80448,
@@ -1905,7 +1774,7 @@
     },
     {
       "vesselName": "DAHLIA",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "DAHLIA",
       "mmsi": "270798000",
       "latitude": 45.53581,
@@ -1949,7 +1818,7 @@
     },
     {
       "vesselName": "DAMSGAARD",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "DAMSGAARD",
       "mmsi": "257087000",
       "imo": "9724453",
@@ -2027,7 +1896,7 @@
     },
     {
       "vesselName": "DENIZ",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "DENIZ",
       "mmsi": "257243400",
       "imo": null,
@@ -2035,7 +1904,15 @@
       "aisDestination": null,
       "shipType": 0,
       "identityReportedAt": "2026-09-25 21:36:09.834270717 +0000 UTC",
-      "identitySource": "AISStream static data"
+      "identitySource": "AISStream static data",
+      "latitude": 59.26667,
+      "longitude": 11.05607,
+      "speed": 0,
+      "heading": 322.9,
+      "course": 322.9,
+      "reportedAt": "2026-09-26 11:34:15.531978113 +0000 UTC",
+      "receivedAt": "2026-09-26T11:34:17.395Z",
+      "source": "AISStream"
     },
     {
       "vesselName": "DENSA HAWK",
@@ -2080,12 +1957,12 @@
       "callsign": null,
       "aisDestination": null,
       "shipType": 0,
-      "identityReportedAt": "2026-08-18 19:05:23.643666872 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:40:42.562765541 +0000 UTC",
       "identitySource": "AISStream static data"
     },
     {
       "vesselName": "DISCOVERER",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "DISCOVERER",
       "mmsi": "255917286",
       "latitude": 53.56904,
@@ -2124,35 +2001,15 @@
       "source": "AISStream"
     },
     {
-      "vesselName": "DOKOS",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z",
-      "aisName": "DOKOS",
-      "mmsi": "636025995",
-      "latitude": 49.95892,
-      "longitude": -3.05703,
-      "speed": 11.7,
-      "heading": 244,
-      "course": 242.6,
-      "reportedAt": "2026-08-03 20:16:24.720583315 +0000 UTC",
-      "receivedAt": "2026-08-03T20:16:26.602Z",
-      "source": "AISStream",
-      "imo": "9318072",
-      "callsign": "A8BY2",
-      "aisDestination": "CHINA FOR ORDERS",
-      "shipType": 80,
-      "identityReportedAt": "2026-09-16 11:49:50.653956538 +0000 UTC",
-      "identitySource": "AISStream static data"
-    },
-    {
       "vesselName": "DOLPHIN 21",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "DOLPHIN",
       "mmsi": "219750000",
       "imo": "9507386",
       "callsign": "OXTQ2",
       "aisDestination": "DERSK",
       "shipType": 52,
-      "identityReportedAt": "2026-09-25 21:46:22.661319592 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:28:23.097646689 +0000 UTC",
       "identitySource": "AISStream static data",
       "latitude": 54.14012,
       "longitude": 12.09649,
@@ -2199,7 +2056,7 @@
     },
     {
       "vesselName": "DS MYKONOS",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "DSM HARBOUR",
@@ -2223,7 +2080,7 @@
     },
     {
       "vesselName": "DUCHESS ROSARIO",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "ECHO.GR",
@@ -2241,16 +2098,16 @@
     },
     {
       "vesselName": "ECO AVALON",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "ECO AVALON",
       "mmsi": "636025849",
       "latitude": -32.65398,
-      "longitude": -60.73751,
-      "speed": 0.1,
+      "longitude": -60.73759,
+      "speed": 0,
       "heading": 323,
-      "course": 47.2,
-      "reportedAt": "2026-09-25 21:43:27.690347393 +0000 UTC",
-      "receivedAt": "2026-09-25T21:52:28.703Z",
+      "course": 143.9,
+      "reportedAt": "2026-09-26 11:29:06.730425787 +0000 UTC",
+      "receivedAt": "2026-09-26T11:29:08.464Z",
       "source": "AISStream",
       "imo": "9701267",
       "callsign": "5LZL4",
@@ -2273,7 +2130,7 @@
     },
     {
       "vesselName": "ECO SPITFIRE",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "ELDIA",
@@ -2296,37 +2153,17 @@
       "source": "AISStream"
     },
     {
-      "vesselName": "ELENA",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z",
-      "aisName": "ELENA",
-      "mmsi": "273267740",
-      "latitude": 59.41022,
-      "longitude": 22.34421,
-      "speed": 8.8,
-      "heading": 232,
-      "course": 230.6,
-      "reportedAt": "2026-07-31 09:29:40.179613553 +0000 UTC",
-      "receivedAt": "2026-07-31T09:29:41.839Z",
-      "source": "AISStream",
-      "imo": "9054963",
-      "callsign": "UAFC5",
-      "aisDestination": "RUKGD",
-      "shipType": 70,
-      "identityReportedAt": "2026-09-24 21:41:29.610765243 +0000 UTC",
-      "identitySource": "AISStream static data"
-    },
-    {
       "vesselName": "ELENA VE",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "ELENA VE",
       "mmsi": "636014709",
-      "latitude": -32.93008,
-      "longitude": -60.64118,
+      "latitude": -32.93028,
+      "longitude": -60.64157,
       "speed": 0,
-      "heading": 304,
+      "heading": 323,
       "course": 7.7,
-      "reportedAt": "2026-09-25 21:39:52.842683385 +0000 UTC",
-      "receivedAt": "2026-09-25T21:39:54.999Z",
+      "reportedAt": "2026-09-26 11:30:54.625580464 +0000 UTC",
+      "receivedAt": "2026-09-26T11:30:56.246Z",
       "source": "AISStream",
       "imo": "9453066",
       "callsign": "A8WB4",
@@ -2377,11 +2214,27 @@
     },
     {
       "vesselName": "ELONA",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "ELSABETH C",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
+      "aisName": "ELSABETH C",
+      "mmsi": "212955000",
+      "latitude": -33.11664,
+      "longitude": -60.50153,
+      "speed": 0,
+      "heading": 354,
+      "course": 193,
+      "reportedAt": "2026-09-26 11:31:56.625783907 +0000 UTC",
+      "receivedAt": "2026-09-26T11:34:54.629Z",
+      "source": "AISStream",
+      "imo": "9730206",
+      "callsign": "5BHS4",
+      "aisDestination": "AR SLO",
+      "shipType": 70,
+      "identityReportedAt": "2026-09-26 11:34:44.086335746 +0000 UTC",
+      "identitySource": "AISStream static data"
     },
     {
       "vesselName": "EMMA JANNEKE",
@@ -2501,7 +2354,7 @@
     },
     {
       "vesselName": "EVITA",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "EVITA",
       "mmsi": "265690230",
       "imo": null,
@@ -2510,13 +2363,13 @@
       "shipType": 0,
       "identityReportedAt": "2026-09-25 12:00:06.229229763 +0000 UTC",
       "identitySource": "AISStream static data",
-      "latitude": 59.2964,
-      "longitude": 18.65158,
+      "latitude": 59.29641,
+      "longitude": 18.65163,
       "speed": 0,
-      "heading": 89.1,
-      "course": 89.1,
-      "reportedAt": "2026-09-25 21:49:50.325474926 +0000 UTC",
-      "receivedAt": "2026-09-25T21:49:51.997Z",
+      "heading": 101.6,
+      "course": 101.6,
+      "reportedAt": "2026-09-26 11:25:51.562938055 +0000 UTC",
+      "receivedAt": "2026-09-26T11:25:52.854Z",
       "source": "AISStream"
     },
     {
@@ -2577,27 +2430,27 @@
     },
     {
       "vesselName": "FAITH",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "FAITH",
       "mmsi": "269056358",
       "imo": null,
       "callsign": "HE6358",
       "aisDestination": null,
-      "shipType": 0,
-      "identityReportedAt": "2026-09-25 21:52:34.727716702 +0000 UTC",
+      "shipType": 37,
+      "identityReportedAt": "2026-09-26 11:29:37.845075936 +0000 UTC",
       "identitySource": "AISStream static data",
-      "latitude": 52.85179,
-      "longitude": 5.68674,
+      "latitude": 52.85175,
+      "longitude": 5.68672,
       "speed": 0,
-      "heading": 147,
-      "course": 147,
-      "reportedAt": "2026-09-25 21:53:46.399865338 +0000 UTC",
-      "receivedAt": "2026-09-25T21:53:47.803Z",
+      "heading": 336.2,
+      "course": 336.2,
+      "reportedAt": "2026-09-26 11:35:41.78514826 +0000 UTC",
+      "receivedAt": "2026-09-26T11:35:43.556Z",
       "source": "AISStream"
     },
     {
       "vesselName": "FANTASEA",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "FANTASEA",
       "mmsi": "369266000",
       "imo": null,
@@ -2629,7 +2482,7 @@
     },
     {
       "vesselName": "FEDERAL BERING",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "FEDERAL MINNESOTA",
@@ -2661,7 +2514,7 @@
     },
     {
       "vesselName": "FG ROTTERDAM",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "FG ROTTERDAM",
       "mmsi": "373474000",
       "latitude": -23.92769,
@@ -2675,19 +2528,27 @@
     },
     {
       "vesselName": "FIESTA",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "FIESTA",
       "mmsi": "224004180",
       "imo": null,
       "callsign": null,
       "aisDestination": null,
       "shipType": 0,
-      "identityReportedAt": "2026-09-25 11:58:35.197188908 +0000 UTC",
-      "identitySource": "AISStream static data"
+      "identityReportedAt": "2026-09-26 11:24:45.064649697 +0000 UTC",
+      "identitySource": "AISStream static data",
+      "latitude": 39.932,
+      "longitude": 3.92816,
+      "speed": 1.5,
+      "heading": 28,
+      "course": 30.2,
+      "reportedAt": "2026-09-26 11:27:59.089198032 +0000 UTC",
+      "receivedAt": "2026-09-26T11:28:00.240Z",
+      "source": "AISStream"
     },
     {
       "vesselName": "FILIA",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "FILIA",
       "mmsi": "211215770",
       "imo": null,
@@ -2699,7 +2560,7 @@
     },
     {
       "vesselName": "FIRST HUNTER",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "FIRST HUNTER",
       "mmsi": "352006684",
       "latitude": -32.77562,
@@ -2714,7 +2575,7 @@
       "callsign": "3E8016",
       "aisDestination": "AR SLO",
       "shipType": 70,
-      "identityReportedAt": "2026-09-24 21:42:57.473084823 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:30:58.427940475 +0000 UTC",
       "identitySource": "AISStream static data"
     },
     {
@@ -2743,7 +2604,7 @@
     },
     {
       "vesselName": "FLORA K",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "FLORA K",
       "mmsi": "256740000",
       "latitude": -30.80842,
@@ -2774,26 +2635,6 @@
       "reportedAt": "2026-09-03 11:32:37.361252177 +0000 UTC",
       "receivedAt": "2026-09-03T11:32:40.327Z",
       "source": "AISStream"
-    },
-    {
-      "vesselName": "FOXTROT",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z",
-      "aisName": "FOXTROT",
-      "mmsi": "219014038",
-      "latitude": 55.69455,
-      "longitude": 12.59922,
-      "speed": 0.1,
-      "heading": 326,
-      "course": 0,
-      "reportedAt": "2026-08-04 19:56:55.234461749 +0000 UTC",
-      "receivedAt": "2026-08-04T19:56:57.259Z",
-      "source": "AISStream",
-      "imo": null,
-      "callsign": "XPE2250",
-      "aisDestination": null,
-      "shipType": 0,
-      "identityReportedAt": "2026-09-12 20:49:43.43161215 +0000 UTC",
-      "identitySource": "AISStream static data"
     },
     {
       "vesselName": "FRANBO BRAVE",
@@ -2895,15 +2736,11 @@
     },
     {
       "vesselName": "GALIO",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
-    },
-    {
-      "vesselName": "GANT NEREA",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "GENCO LADDEY",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "GENCO LADDEY",
       "mmsi": "538009751",
       "latitude": -32.88615,
@@ -2922,28 +2759,8 @@
       "identitySource": "AISStream static data"
     },
     {
-      "vesselName": "GEORGIA ATH",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z",
-      "aisName": "GEORGIA",
-      "mmsi": "244039113",
-      "latitude": 52.41022,
-      "longitude": 4.7945,
-      "speed": 0,
-      "heading": 93,
-      "course": 148.8,
-      "reportedAt": "2026-08-05 09:18:06.705463937 +0000 UTC",
-      "receivedAt": "2026-08-05T09:18:08.651Z",
-      "source": "AISStream",
-      "imo": null,
-      "callsign": "PH8574",
-      "aisDestination": "WESEL GARANT WESEL",
-      "shipType": 89,
-      "identityReportedAt": "2026-09-20 20:58:44.587446786 +0000 UTC",
-      "identitySource": "AISStream static data"
-    },
-    {
       "vesselName": "GH GLORY",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "GINGA ANGEL",
@@ -2951,11 +2768,11 @@
     },
     {
       "vesselName": "GINGA CHEETAH",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "GINGA JAGUAR",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "GINGA JAGUARUNDI",
       "mmsi": "352006709",
       "imo": "1107049",
@@ -3003,7 +2820,7 @@
     },
     {
       "vesselName": "GOLD OAK",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "GOLDEN DAISY",
@@ -3011,7 +2828,7 @@
     },
     {
       "vesselName": "GOLDEN EMAN",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "GOOD HEART",
@@ -3019,7 +2836,7 @@
     },
     {
       "vesselName": "GOOD LUCK",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "GOOD LUCK",
       "mmsi": "211132590",
       "imo": null,
@@ -3028,18 +2845,18 @@
       "shipType": 0,
       "identityReportedAt": "2026-09-25 11:58:06.742743016 +0000 UTC",
       "identitySource": "AISStream static data",
-      "latitude": 51.59243,
-      "longitude": 3.71587,
+      "latitude": 51.59244,
+      "longitude": 3.71586,
       "speed": 0,
       "heading": 360,
       "course": 360,
-      "reportedAt": "2026-09-19 11:12:41.134508403 +0000 UTC",
-      "receivedAt": "2026-09-19T11:12:42.834Z",
+      "reportedAt": "2026-09-26 11:36:37.589126096 +0000 UTC",
+      "receivedAt": "2026-09-26T11:36:39.458Z",
       "source": "AISStream"
     },
     {
       "vesselName": "GRAMPUS CHARM",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "GRISEL N",
@@ -3099,11 +2916,11 @@
     },
     {
       "vesselName": "HAFNIA AMMOLITE",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "HAFNIA VIOLETTE",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "HAFNIA VIOLETTE",
       "mmsi": "538005991",
       "latitude": -33.36729,
@@ -3113,7 +2930,13 @@
       "course": 250.5,
       "reportedAt": "2026-09-24 11:50:27.445974457 +0000 UTC",
       "receivedAt": "2026-09-24T11:50:29.321Z",
-      "source": "AISStream"
+      "source": "AISStream",
+      "imo": null,
+      "callsign": "V7IH3",
+      "aisDestination": null,
+      "shipType": 82,
+      "identityReportedAt": "2026-09-26 11:31:14.900145823 +0000 UTC",
+      "identitySource": "AISStream static data"
     },
     {
       "vesselName": "HAKATAJIMA SUNSHINE",
@@ -3165,11 +2988,11 @@
     },
     {
       "vesselName": "HG LIVERPOOL",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "HONOR DIVA",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "HONOR DIVA",
       "mmsi": "636020809",
       "imo": "9905617",
@@ -3194,9 +3017,9 @@
       "mmsi": "373440000",
       "imo": "9335991",
       "callsign": "3FCZ4",
-      "aisDestination": "RU_LUGA",
+      "aisDestination": "RUULU",
       "shipType": 70,
-      "identityReportedAt": "2026-09-24 21:49:45.141244285 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:35:51.449044253 +0000 UTC",
       "identitySource": "AISStream static data"
     },
     {
@@ -3205,11 +3028,11 @@
     },
     {
       "vesselName": "HTK DISCOVERY",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "HYDRA DAWN",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "ILIA",
@@ -3221,16 +3044,16 @@
     },
     {
       "vesselName": "ILLOVO RIVER",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "ILLOVO RIVER",
       "mmsi": "563301600",
-      "latitude": -32.6043,
-      "longitude": -60.76205,
+      "latitude": -32.60425,
+      "longitude": -60.76208,
       "speed": 0,
       "heading": 332,
-      "course": 16.5,
-      "reportedAt": "2026-09-25 21:52:36.335813808 +0000 UTC",
-      "receivedAt": "2026-09-25T21:52:38.242Z",
+      "course": 142.9,
+      "reportedAt": "2026-09-26 11:28:36.331102763 +0000 UTC",
+      "receivedAt": "2026-09-26T11:28:38.072Z",
       "source": "AISStream",
       "imo": "9791951",
       "callsign": "9V7172",
@@ -3275,19 +3098,27 @@
     },
     {
       "vesselName": "INSPIRE",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "INSPIRE",
       "mmsi": "368423040",
       "imo": null,
       "callsign": null,
       "aisDestination": null,
       "shipType": 0,
-      "identityReportedAt": "2026-09-25 21:53:40.995126599 +0000 UTC",
-      "identitySource": "AISStream static data"
+      "identityReportedAt": "2026-09-26 11:41:41.046413132 +0000 UTC",
+      "identitySource": "AISStream static data",
+      "latitude": 48.5125,
+      "longitude": -122.60842,
+      "speed": 0,
+      "heading": 318,
+      "course": 181,
+      "reportedAt": "2026-09-26 11:29:12.865661677 +0000 UTC",
+      "receivedAt": "2026-09-26T11:41:42.397Z",
+      "source": "AISStream"
     },
     {
       "vesselName": "INTUITION",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "INTUITION",
       "mmsi": "503072510",
       "imo": null,
@@ -3302,13 +3133,13 @@
       "lastLineupSeenAt": "2026-08-21T07:06:39.431Z",
       "aisName": "IONA ISLAND",
       "mmsi": "563302200",
-      "latitude": -32.66123,
-      "longitude": -60.72451,
+      "latitude": -32.63776,
+      "longitude": -60.7485,
       "speed": 0,
-      "heading": 335,
-      "course": 166.9,
-      "reportedAt": "2026-09-25 21:52:00.418670876 +0000 UTC",
-      "receivedAt": "2026-09-25T21:52:02.201Z",
+      "heading": 347,
+      "course": 68.2,
+      "reportedAt": "2026-09-26 11:39:39.659573831 +0000 UTC",
+      "receivedAt": "2026-09-26T11:39:40.986Z",
       "source": "AISStream",
       "imo": "9641780",
       "callsign": "9VHR7",
@@ -3365,7 +3196,7 @@
     },
     {
       "vesselName": "IRMGARD",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "IRMGARD",
       "mmsi": "636023986",
       "latitude": -23.96833,
@@ -3419,7 +3250,7 @@
     },
     {
       "vesselName": "ISKANDAR",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "ISKENDERUN M",
@@ -3459,7 +3290,7 @@
     },
     {
       "vesselName": "IWAGI ISLAND",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "IZUMI",
@@ -3570,7 +3401,7 @@
       "callsign": "DAEH",
       "aisDestination": "FINKENWERDER",
       "shipType": 36,
-      "identityReportedAt": "2026-09-25 21:53:41.090937469 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:35:42.591564275 +0000 UTC",
       "identitySource": "AISStream static data",
       "latitude": 53.53311,
       "longitude": 9.88327,
@@ -3587,7 +3418,7 @@
     },
     {
       "vesselName": "JY LAKE",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "JY LAKE",
       "mmsi": "636019109",
       "latitude": -32.9236,
@@ -3610,19 +3441,19 @@
       "lastLineupSeenAt": "2026-09-09T11:21:11.767Z",
       "aisName": "K BEREKET",
       "mmsi": "636024066",
-      "latitude": -23.9344,
+      "latitude": -23.93442,
       "longitude": -46.31467,
       "speed": 0,
       "heading": 292,
-      "course": 282,
-      "reportedAt": "2026-09-25 21:50:51.429781096 +0000 UTC",
-      "receivedAt": "2026-09-25T21:51:07.313Z",
+      "course": 358,
+      "reportedAt": "2026-09-26 11:38:50.866129033 +0000 UTC",
+      "receivedAt": "2026-09-26T11:39:15.722Z",
       "source": "AISStream",
       "imo": "9370408",
       "callsign": "5LQU9",
       "aisDestination": "BRSSZ",
       "shipType": 70,
-      "identityReportedAt": "2026-09-25 21:51:05.508120308 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:39:08.022219447 +0000 UTC",
       "identitySource": "AISStream static data"
     },
     {
@@ -3712,12 +3543,12 @@
       "callsign": "DJ2848",
       "aisDestination": null,
       "shipType": 0,
-      "identityReportedAt": "2026-09-25 21:49:14.830221164 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:33:32.610933128 +0000 UTC",
       "identitySource": "AISStream static data"
     },
     {
       "vesselName": "KEN STAR",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "KEN STAR",
       "mmsi": "636015780",
       "imo": "9619593",
@@ -3737,7 +3568,17 @@
     },
     {
       "vesselName": "KEREM",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
+      "aisName": "KEREM",
+      "mmsi": "215143000",
+      "latitude": -32.75149,
+      "longitude": -60.72136,
+      "speed": 0,
+      "heading": 19,
+      "course": 278,
+      "reportedAt": "2026-09-26 11:36:11.401999527 +0000 UTC",
+      "receivedAt": "2026-09-26T11:36:13.224Z",
+      "source": "AISStream"
     },
     {
       "vesselName": "KOCIEWIE",
@@ -3784,18 +3625,6 @@
       "source": "AISStream"
     },
     {
-      "vesselName": "KWAI KWAI",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z",
-      "aisName": "KWAI KWAI",
-      "mmsi": "538007176",
-      "imo": "9780976",
-      "callsign": "V7YD8",
-      "aisDestination": "RU ULU",
-      "shipType": 70,
-      "identityReportedAt": "2026-09-15 21:37:14.87959105 +0000 UTC",
-      "identitySource": "AISStream static data"
-    },
-    {
       "vesselName": "LA SELVA",
       "lastLineupSeenAt": "2026-09-01T11:38:02.825Z",
       "aisName": "LA SELA",
@@ -3809,7 +3638,7 @@
     },
     {
       "vesselName": "LA TONDA",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "LATONA",
       "mmsi": "378113036",
       "latitude": 43.55659,
@@ -3825,18 +3654,6 @@
       "aisDestination": "JLP",
       "shipType": 37,
       "identityReportedAt": "2026-09-25 21:44:39.141428879 +0000 UTC",
-      "identitySource": "AISStream static data"
-    },
-    {
-      "vesselName": "LACON",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z",
-      "aisName": "LACON",
-      "mmsi": "636017314",
-      "imo": "9277565",
-      "callsign": "D5KH8",
-      "aisDestination": "EG PSD",
-      "shipType": 70,
-      "identityReportedAt": "2026-09-12 11:02:22.641575804 +0000 UTC",
       "identitySource": "AISStream static data"
     },
     {
@@ -3861,16 +3678,16 @@
     },
     {
       "vesselName": "LADY LAVELA",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "LADY LAVELA",
       "mmsi": "314001014",
-      "latitude": -32.62519,
-      "longitude": -60.75344,
-      "speed": 0,
-      "heading": 350,
-      "course": 7.4,
-      "reportedAt": "2026-09-25 21:47:58.511548148 +0000 UTC",
-      "receivedAt": "2026-09-25T21:50:20.885Z",
+      "latitude": -33.62302,
+      "longitude": -59.75974,
+      "speed": 11.1,
+      "heading": 123,
+      "course": 125.1,
+      "reportedAt": "2026-09-26 11:42:10.417271632 +0000 UTC",
+      "receivedAt": "2026-09-26T11:42:12.131Z",
       "source": "AISStream",
       "imo": "9675561",
       "callsign": "8P2544",
@@ -3878,30 +3695,6 @@
       "shipType": 70,
       "identityReportedAt": "2026-09-25 21:50:19.078743522 +0000 UTC",
       "identitySource": "AISStream static data"
-    },
-    {
-      "vesselName": "LADY VENEZIA",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z"
-    },
-    {
-      "vesselName": "LAPIS LAZULI",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z",
-      "aisName": "LAPIS LAZULI",
-      "mmsi": "338473932",
-      "imo": null,
-      "callsign": null,
-      "aisDestination": null,
-      "shipType": 0,
-      "identityReportedAt": "2026-08-26 20:14:34.535075005 +0000 UTC",
-      "identitySource": "AISStream static data",
-      "latitude": 35.07966,
-      "longitude": -76.5504,
-      "speed": 5.6,
-      "heading": 231.8,
-      "course": 231.8,
-      "reportedAt": "2026-08-01 19:50:41.364211639 +0000 UTC",
-      "receivedAt": "2026-08-01T19:50:43.355Z",
-      "source": "AISStream"
     },
     {
       "vesselName": "LEFKADA I",
@@ -3999,11 +3792,11 @@
     },
     {
       "vesselName": "LEMESSOS NAPA",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "LEONARDO",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "LEONARDO",
       "mmsi": "269057129",
       "imo": null,
@@ -4012,13 +3805,13 @@
       "shipType": 80,
       "identityReportedAt": "2026-09-25 21:53:44.442250796 +0000 UTC",
       "identitySource": "AISStream static data",
-      "latitude": 51.69255,
-      "longitude": 4.5694,
+      "latitude": 51.69236,
+      "longitude": 4.56892,
       "speed": 0,
       "heading": 360,
       "course": 360,
-      "reportedAt": "2026-09-25 21:44:42.582192638 +0000 UTC",
-      "receivedAt": "2026-09-25T21:53:45.811Z",
+      "reportedAt": "2026-09-26 11:33:43.423324097 +0000 UTC",
+      "receivedAt": "2026-09-26T11:33:45.269Z",
       "source": "AISStream"
     },
     {
@@ -4037,16 +3830,16 @@
     },
     {
       "vesselName": "LINDEN TRADER",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "LINDEN TRADER",
       "mmsi": "548694000",
-      "latitude": -32.77266,
-      "longitude": -60.72039,
-      "speed": 0,
-      "heading": 336,
-      "course": 7,
-      "reportedAt": "2026-09-25 21:47:28.253884212 +0000 UTC",
-      "receivedAt": "2026-09-25T21:53:03.536Z",
+      "latitude": -32.90736,
+      "longitude": -60.66512,
+      "speed": 0.1,
+      "heading": 337,
+      "course": 39,
+      "reportedAt": "2026-09-26 11:40:44.971081918 +0000 UTC",
+      "receivedAt": "2026-09-26T11:40:46.811Z",
       "source": "AISStream",
       "imo": "9867578",
       "callsign": "DYDN",
@@ -4061,7 +3854,7 @@
     },
     {
       "vesselName": "LJUTA",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "LJUTA",
       "mmsi": "376961000",
       "imo": "9672210",
@@ -4078,18 +3871,6 @@
       "reportedAt": "2026-09-12 11:01:46.466601735 +0000 UTC",
       "receivedAt": "2026-09-12T11:01:47.852Z",
       "source": "AISStream"
-    },
-    {
-      "vesselName": "LM ATHENA",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z",
-      "aisName": "LM ATHENA",
-      "mmsi": "636024441",
-      "imo": "9528184",
-      "callsign": "5LSP9",
-      "aisDestination": "MA CAS",
-      "shipType": 70,
-      "identityReportedAt": "2026-09-23 11:46:13.311284184 +0000 UTC",
-      "identitySource": "AISStream static data"
     },
     {
       "vesselName": "LOTUS",
@@ -4113,7 +3894,7 @@
     },
     {
       "vesselName": "LOWLANDS CORSO",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "LOWLANDS DIAMOND",
@@ -4267,7 +4048,7 @@
     },
     {
       "vesselName": "LYRA M",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "LYRIC STAR",
@@ -4323,7 +4104,7 @@
     },
     {
       "vesselName": "MAPLE AMBITION",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "MAPLE AMBITION",
       "mmsi": "477181800",
       "latitude": -32.65744,
@@ -4435,7 +4216,7 @@
     },
     {
       "vesselName": "MARINA BLISS",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "MARINA BLISS",
       "mmsi": "563885000",
       "latitude": -35.08075,
@@ -4563,7 +4344,7 @@
     },
     {
       "vesselName": "MED ATLANTIC",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "MEDITERRANEAN SPIRIT",
@@ -4599,11 +4380,11 @@
     },
     {
       "vesselName": "MERCURY RISING",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "MERRY M",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "MILIN KAMAK",
@@ -4612,9 +4393,9 @@
       "mmsi": "215673000",
       "imo": "9841641",
       "callsign": "9HA5239",
-      "aisDestination": "TO ORDER",
+      "aisDestination": "UST LUGA/RF",
       "shipType": 70,
-      "identityReportedAt": "2026-09-25 12:09:08.055517894 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:38:47.877139969 +0000 UTC",
       "identitySource": "AISStream static data"
     },
     {
@@ -4632,9 +4413,9 @@
       "mmsi": "636022855",
       "imo": "9956214",
       "callsign": "5LKT2",
-      "aisDestination": "ESLPA-GBPTL",
+      "aisDestination": "GBPTL-GBTEE",
       "shipType": 70,
-      "identityReportedAt": "2026-09-19 11:13:27.232221353 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:37:26.127739047 +0000 UTC",
       "identitySource": "AISStream static data"
     },
     {
@@ -4650,7 +4431,7 @@
       "callsign": "WDN5961",
       "aisDestination": "US^0ZFE>0VBG",
       "shipType": 57,
-      "identityReportedAt": "2026-09-25 21:47:34.746670905 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:41:40.823213687 +0000 UTC",
       "identitySource": "AISStream static data",
       "latitude": 45.58133,
       "longitude": -122.7607,
@@ -4664,10 +4445,6 @@
     {
       "vesselName": "MOUNT TARANAKI",
       "lastLineupSeenAt": "2026-08-13T19:19:17.968Z"
-    },
-    {
-      "vesselName": "MP KAMSARMAX 1",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z"
     },
     {
       "vesselName": "MTM BIG APPLE",
@@ -4685,7 +4462,7 @@
     },
     {
       "vesselName": "MTM HOUSTON",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "MTM HOUSTON",
       "mmsi": "566306000",
       "latitude": -33.9115,
@@ -4803,7 +4580,7 @@
     },
     {
       "vesselName": "NAMA",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "NAMA",
       "mmsi": "538009155",
       "imo": "9404455",
@@ -4832,20 +4609,8 @@
       "lastLineupSeenAt": "2026-09-25T11:49:20.868Z"
     },
     {
-      "vesselName": "NEW BONANZA",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z",
-      "aisName": "NEW BONANZA",
-      "mmsi": "371868000",
-      "imo": "9342815",
-      "callsign": "3EDA9",
-      "aisDestination": "SINGAPORE",
-      "shipType": 70,
-      "identityReportedAt": "2026-09-23 11:36:21.196738974 +0000 UTC",
-      "identitySource": "AISStream static data"
-    },
-    {
       "vesselName": "NIKOLAOS A",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "NIKOLAOS F.",
       "mmsi": "239174000",
       "imo": null,
@@ -4855,12 +4620,12 @@
       "identityReportedAt": "2026-09-24 21:33:34.12031912 +0000 UTC",
       "identitySource": "AISStream static data",
       "latitude": 38.24496,
-      "longitude": 21.72735,
+      "longitude": 21.72732,
       "speed": 0,
-      "heading": 335,
-      "course": 335,
-      "reportedAt": "2026-09-25 21:46:33.284293792 +0000 UTC",
-      "receivedAt": "2026-09-25T21:46:35.141Z",
+      "heading": 261,
+      "course": 261,
+      "reportedAt": "2026-09-26 11:42:57.086021861 +0000 UTC",
+      "receivedAt": "2026-09-26T11:42:58.833Z",
       "source": "AISStream"
     },
     {
@@ -4878,12 +4643,8 @@
       "source": "AISStream"
     },
     {
-      "vesselName": "NIKOMARIN",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z"
-    },
-    {
       "vesselName": "NING JING HAI",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "NING JING HAI",
       "mmsi": "477636800",
       "latitude": -33.12887,
@@ -4916,29 +4677,31 @@
       "source": "AISStream"
     },
     {
-      "vesselName": "NORD BRAVE",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z"
-    },
-    {
-      "vesselName": "NORD SATURN",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z"
-    },
-    {
       "vesselName": "NORDIC MERCHANTS",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
+      "aisName": "NORDIC MERCHANTS",
+      "mmsi": "538090732",
+      "latitude": -33.45572,
+      "longitude": -60.02396,
+      "speed": 10.2,
+      "heading": 302,
+      "course": 302.9,
+      "reportedAt": "2026-09-26 11:41:32.889630133 +0000 UTC",
+      "receivedAt": "2026-09-26T11:41:36.138Z",
+      "source": "AISStream"
     },
     {
       "vesselName": "NORDSEINE",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "NORDSEINE",
       "mmsi": "255806298",
-      "latitude": -32.7559,
-      "longitude": -60.71982,
+      "latitude": -32.73639,
+      "longitude": -60.7264,
       "speed": 0,
-      "heading": 3,
-      "course": 9.1,
-      "reportedAt": "2026-09-25 21:52:49.527959898 +0000 UTC",
-      "receivedAt": "2026-09-25T21:52:51.381Z",
+      "heading": 358,
+      "course": 246.5,
+      "reportedAt": "2026-09-26 11:41:07.225271175 +0000 UTC",
+      "receivedAt": "2026-09-26T11:41:09.031Z",
       "source": "AISStream",
       "imo": "9596052",
       "callsign": "CQAW8",
@@ -4973,11 +4736,11 @@
     },
     {
       "vesselName": "NORSE GROWTH",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "NORSE HOKKAIDO",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "NORSE HOKKAIDO",
       "mmsi": "563273500",
       "latitude": -33.71745,
@@ -4997,7 +4760,7 @@
     },
     {
       "vesselName": "NV MINERVA",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "NV MINERVA",
       "mmsi": "356195000",
       "imo": "9542166",
@@ -5023,7 +4786,7 @@
     },
     {
       "vesselName": "OCEAN AZURE",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "OCEAN AZURE",
       "mmsi": "352002489",
       "latitude": -34.07186,
@@ -5061,7 +4824,7 @@
     },
     {
       "vesselName": "OCEAN INNOVATION",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "OCEAN INNOVATION",
       "mmsi": "477195900",
       "latitude": -33.33305,
@@ -5071,11 +4834,17 @@
       "course": 91,
       "reportedAt": "2026-09-24 11:49:16.753204386 +0000 UTC",
       "receivedAt": "2026-09-24T11:49:18.255Z",
-      "source": "AISStream"
+      "source": "AISStream",
+      "imo": "9659892",
+      "callsign": "VRMA9",
+      "aisDestination": "SAN LORENZO",
+      "shipType": 70,
+      "identityReportedAt": "2026-09-26 11:35:11.997293014 +0000 UTC",
+      "identitySource": "AISStream static data"
     },
     {
       "vesselName": "OCEAN VENUS",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "OCEANUS",
@@ -5094,7 +4863,7 @@
       "callsign": "WDL4155",
       "aisDestination": null,
       "shipType": 0,
-      "identityReportedAt": "2026-09-25 21:36:35.519612696 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:36:39.036772205 +0000 UTC",
       "identitySource": "AISStream static data"
     },
     {
@@ -5119,11 +4888,11 @@
     },
     {
       "vesselName": "OGINO PARK",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "ONYX O",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "ORIENT POINT",
@@ -5142,26 +4911,6 @@
       "identitySource": "AISStream static data"
     },
     {
-      "vesselName": "ORLANDO",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z",
-      "aisName": "ORLANDO",
-      "mmsi": "244850762",
-      "latitude": 49.07076,
-      "longitude": 8.31003,
-      "speed": 0.8,
-      "heading": 360,
-      "course": 360,
-      "reportedAt": "2026-08-02 19:52:32.992139809 +0000 UTC",
-      "receivedAt": "2026-08-02T19:52:35.078Z",
-      "source": "AISStream",
-      "imo": null,
-      "callsign": "PD9104",
-      "aisDestination": "RHEINAUHAFEN HAFENB",
-      "shipType": 79,
-      "identityReportedAt": "2026-09-17 11:54:09.219068706 +0000 UTC",
-      "identitySource": "AISStream static data"
-    },
-    {
       "vesselName": "PACIFIC ETERNITY",
       "lastLineupSeenAt": "2026-08-25T07:07:48.395Z"
     },
@@ -5171,7 +4920,7 @@
     },
     {
       "vesselName": "PACIFIC STAR",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "PACIFIC STAR",
       "mmsi": "538006938",
       "latitude": -2.07277,
@@ -5191,7 +4940,7 @@
     },
     {
       "vesselName": "PAIWAN CHAMPION",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "PALEXPO",
@@ -5264,27 +5013,7 @@
       "callsign": "9HA5907",
       "aisDestination": "IERIN",
       "shipType": 70,
-      "identityReportedAt": "2026-09-25 21:51:02.184782296 +0000 UTC",
-      "identitySource": "AISStream static data"
-    },
-    {
-      "vesselName": "PARABOLICA",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z",
-      "aisName": "PARABOLICA 2",
-      "mmsi": "319348600",
-      "latitude": 43.56451,
-      "longitude": 7.08026,
-      "speed": 0,
-      "heading": 319,
-      "course": 131.4,
-      "reportedAt": "2026-08-05 09:14:41.103076201 +0000 UTC",
-      "receivedAt": "2026-08-05T09:23:31.573Z",
-      "source": "AISStream",
-      "imo": "1171727",
-      "callsign": "ZGWA2",
-      "aisDestination": "GENOVA",
-      "shipType": 37,
-      "identityReportedAt": "2026-09-25 21:52:44.954434646 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:33:45.672478562 +0000 UTC",
       "identitySource": "AISStream static data"
     },
     {
@@ -5324,12 +5053,8 @@
       "callsign": "WDE4348",
       "aisDestination": "NEW YORK",
       "shipType": 52,
-      "identityReportedAt": "2026-09-25 21:39:23.354626291 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:39:23.30385214 +0000 UTC",
       "identitySource": "AISStream static data"
-    },
-    {
-      "vesselName": "PENA MED",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z"
     },
     {
       "vesselName": "PENELOPE I",
@@ -5340,12 +5065,12 @@
       "callsign": null,
       "aisDestination": null,
       "shipType": 0,
-      "identityReportedAt": "2026-09-25 21:43:21.189492857 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:43:21.533826932 +0000 UTC",
       "identitySource": "AISStream static data"
     },
     {
       "vesselName": "PETREL",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "PETREL",
       "mmsi": "227009960",
       "imo": null,
@@ -5365,7 +5090,7 @@
     },
     {
       "vesselName": "PEWEE",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "PHAEDRA",
@@ -5409,43 +5134,31 @@
     },
     {
       "vesselName": "PIRRIHIOS",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "POLESTAR",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "POLESTAR",
       "mmsi": "319243300",
       "imo": "9823596",
       "callsign": "ZGQZ4",
       "aisDestination": "MCO",
       "shipType": 37,
-      "identityReportedAt": "2026-09-24 21:42:18.171177949 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:24:17.716786763 +0000 UTC",
       "identitySource": "AISStream static data",
-      "latitude": 43.73812,
-      "longitude": 7.44582,
-      "speed": 0.1,
-      "heading": 98,
-      "course": 291.4,
-      "reportedAt": "2026-09-25 12:06:49.408398559 +0000 UTC",
-      "receivedAt": "2026-09-25T12:06:51.258Z",
+      "latitude": 43.73784,
+      "longitude": 7.44741,
+      "speed": 0.3,
+      "heading": 123,
+      "course": 169.8,
+      "reportedAt": "2026-09-26 11:39:59.902255774 +0000 UTC",
+      "receivedAt": "2026-09-26T11:40:01.766Z",
       "source": "AISStream"
     },
     {
-      "vesselName": "POLSTEAM WELTYN",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z",
-      "aisName": "POLSTEAM WELTYN",
-      "mmsi": "255915812",
-      "imo": "9984845",
-      "callsign": "CQ2270",
-      "aisDestination": "TR BDM",
-      "shipType": 70,
-      "identityReportedAt": "2026-09-12 20:32:22.351684288 +0000 UTC",
-      "identitySource": "AISStream static data"
-    },
-    {
       "vesselName": "PORT ALBERNI",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "PORT ALBERNI",
       "mmsi": "477046800",
       "imo": "9335886",
@@ -5497,11 +5210,11 @@
     },
     {
       "vesselName": "PORT TOKYO",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "PRABHU DAS",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "PRAETORIUS",
@@ -5565,7 +5278,7 @@
     },
     {
       "vesselName": "PRINCESS GHAIDAA",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "PVT AURORA",
@@ -5587,11 +5300,11 @@
     },
     {
       "vesselName": "PYXIS OCEAN",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "QUOD VERUM",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "RANA",
@@ -5619,19 +5332,43 @@
     },
     {
       "vesselName": "RILA",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
+      "aisName": "RILA",
+      "mmsi": "248056000",
+      "latitude": -33.0386,
+      "longitude": -60.57883,
+      "speed": 0,
+      "heading": 331,
+      "course": 139.6,
+      "reportedAt": "2026-09-26 11:35:13.698892675 +0000 UTC",
+      "receivedAt": "2026-09-26T11:35:15.334Z",
+      "source": "AISStream",
+      "imo": "9754915",
+      "callsign": "9HA4496",
+      "aisDestination": "AR ROS",
+      "shipType": 70,
+      "identityReportedAt": "2026-09-26 11:33:49.474187586 +0000 UTC",
+      "identitySource": "AISStream static data"
     },
     {
       "vesselName": "RIVA",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "RIVA",
       "mmsi": "244690318",
       "imo": null,
       "callsign": "PB6482",
       "aisDestination": "ANTWERPEN",
       "shipType": 89,
-      "identityReportedAt": "2026-09-25 21:40:50.41022134 +0000 UTC",
-      "identitySource": "AISStream static data"
+      "identityReportedAt": "2026-09-26 11:41:46.492953053 +0000 UTC",
+      "identitySource": "AISStream static data",
+      "latitude": 51.24849,
+      "longitude": 4.37444,
+      "speed": 0,
+      "heading": 329,
+      "course": 329,
+      "reportedAt": "2026-09-26 11:42:47.216210379 +0000 UTC",
+      "receivedAt": "2026-09-26T11:42:49.076Z",
+      "source": "AISStream"
     },
     {
       "vesselName": "RIZIK BEY",
@@ -5662,7 +5399,7 @@
       "callsign": "9HA5937",
       "aisDestination": "BRAKE/GERMANY",
       "shipType": 70,
-      "identityReportedAt": "2026-09-25 12:03:58.12180886 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:33:56.037928641 +0000 UTC",
       "identitySource": "AISStream static data"
     },
     {
@@ -5763,7 +5500,7 @@
     },
     {
       "vesselName": "SAKIZAYA VICTORY",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "SAKIZAYA VICTORY",
       "mmsi": "636020768",
       "latitude": -32.66726,
@@ -5783,11 +5520,11 @@
     },
     {
       "vesselName": "SAKIZAYA YOUTH",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "SALAMINIAN",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "SALAMINIAN",
       "mmsi": "209388000",
       "latitude": -34.8193,
@@ -5807,22 +5544,22 @@
     },
     {
       "vesselName": "SALLY",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "SALLY",
       "mmsi": "265049870",
       "imo": null,
       "callsign": null,
       "aisDestination": null,
       "shipType": 0,
-      "identityReportedAt": "2026-09-25 21:46:18.572660975 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:34:18.718317289 +0000 UTC",
       "identitySource": "AISStream static data",
-      "latitude": 56.64997,
+      "latitude": 56.64998,
       "longitude": 16.46136,
       "speed": 0,
       "heading": 360,
       "course": 360,
-      "reportedAt": "2026-09-25 12:00:40.772984943 +0000 UTC",
-      "receivedAt": "2026-09-25T12:00:42.698Z",
+      "reportedAt": "2026-09-26 11:39:39.647949792 +0000 UTC",
+      "receivedAt": "2026-09-26T11:39:40.853Z",
       "source": "AISStream"
     },
     {
@@ -5846,20 +5583,8 @@
       "source": "AISStream"
     },
     {
-      "vesselName": "SCIO SPIRIT",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z",
-      "aisName": "SCIO SPIRIT",
-      "mmsi": "636023235",
-      "imo": "9502738",
-      "callsign": "5LMR8",
-      "aisDestination": "GB BEL",
-      "shipType": 70,
-      "identityReportedAt": "2026-09-25 21:52:13.652696768 +0000 UTC",
-      "identitySource": "AISStream static data"
-    },
-    {
       "vesselName": "SDM DONGGUAN",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "SEA LION",
@@ -5870,7 +5595,7 @@
       "callsign": "ZGQT7",
       "aisDestination": "IT GOA",
       "shipType": 37,
-      "identityReportedAt": "2026-09-25 21:44:27.809158632 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:38:31.46929019 +0000 UTC",
       "identitySource": "AISStream static data",
       "latitude": 44.3951,
       "longitude": 8.9313,
@@ -5883,7 +5608,7 @@
     },
     {
       "vesselName": "SEA TIGER I",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "SEA TIGER",
       "mmsi": "338385829",
       "imo": null,
@@ -5911,11 +5636,11 @@
     },
     {
       "vesselName": "SEAJOY II",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "SEASON TRADER",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "SEASPAN TRADER",
       "mmsi": "316047565",
       "imo": "9886392",
@@ -5947,7 +5672,7 @@
     },
     {
       "vesselName": "SEAVENUS II",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "SEAVENUS II",
       "mmsi": "636025937",
       "imo": "1067641",
@@ -5985,22 +5710,22 @@
     },
     {
       "vesselName": "SERENDIPITY",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "SERENDIPITY II",
       "mmsi": "319848000",
       "imo": null,
       "callsign": "ZCIP",
       "aisDestination": "FT_LAUDERDALE",
       "shipType": 37,
-      "identityReportedAt": "2026-09-25 21:53:35.800033335 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:23:39.457972208 +0000 UTC",
       "identitySource": "AISStream static data",
-      "latitude": 26.08611,
-      "longitude": -80.18553,
+      "latitude": 26.0861,
+      "longitude": -80.18549,
       "speed": 0,
-      "heading": 34.3,
-      "course": 34.3,
-      "reportedAt": "2026-09-25 12:08:08.118626978 +0000 UTC",
-      "receivedAt": "2026-09-25T12:08:09.954Z",
+      "heading": 26.9,
+      "course": 26.9,
+      "reportedAt": "2026-09-26 11:38:08.467688035 +0000 UTC",
+      "receivedAt": "2026-09-26T11:38:10.313Z",
       "source": "AISStream"
     },
     {
@@ -6009,7 +5734,7 @@
     },
     {
       "vesselName": "SHENG MAO HAI",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "SHENG MAO HAI",
       "mmsi": "414009000",
       "imo": "9533086",
@@ -6029,7 +5754,7 @@
     },
     {
       "vesselName": "SHI DAI 9",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "SHI DAI 9",
       "mmsi": "414722000",
       "latitude": -34.02216,
@@ -6043,7 +5768,7 @@
     },
     {
       "vesselName": "SHINE AGATE",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "SHINE AGATE",
       "mmsi": "636023455",
       "imo": "9971484",
@@ -6063,27 +5788,27 @@
     },
     {
       "vesselName": "SILVER",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "SILVERO",
       "mmsi": "265568520",
       "imo": null,
       "callsign": "SDAK",
       "aisDestination": null,
       "shipType": 60,
-      "identityReportedAt": "2026-09-25 11:58:42.404808857 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:40:46.289193468 +0000 UTC",
       "identitySource": "AISStream static data",
-      "latitude": 59.40253,
-      "longitude": 18.3558,
+      "latitude": 59.322,
+      "longitude": 18.10433,
       "speed": 0,
-      "heading": 248,
-      "course": 127.7,
-      "reportedAt": "2026-09-01 11:55:17.210442451 +0000 UTC",
-      "receivedAt": "2026-09-01T11:55:19.885Z",
+      "heading": 352,
+      "course": 199,
+      "reportedAt": "2026-09-26 11:41:38.060028048 +0000 UTC",
+      "receivedAt": "2026-09-26T11:41:39.371Z",
       "source": "AISStream"
     },
     {
       "vesselName": "SILVER GERTRUDE",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "SILVER GERTRUDE",
       "mmsi": "372905000",
       "latitude": -32.64884,
@@ -6103,7 +5828,7 @@
     },
     {
       "vesselName": "SILVERGATE",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "SM SAMCHEONPO",
@@ -6165,27 +5890,27 @@
     },
     {
       "vesselName": "SOUTHERN STAR",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "SOUTHERN STAR",
       "mmsi": "503161350",
       "imo": null,
       "callsign": null,
       "aisDestination": null,
       "shipType": 0,
-      "identityReportedAt": "2026-09-25 21:53:46.599885887 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:41:46.918826474 +0000 UTC",
       "identitySource": "AISStream static data",
-      "latitude": -32.06792,
-      "longitude": 115.74609,
+      "latitude": -32.0679,
+      "longitude": 115.74607,
       "speed": 0,
       "heading": 360,
       "course": 360,
-      "reportedAt": "2026-09-25 12:05:14.94393703 +0000 UTC",
-      "receivedAt": "2026-09-25T12:05:16.757Z",
+      "reportedAt": "2026-09-26 11:26:17.018271548 +0000 UTC",
+      "receivedAt": "2026-09-26T11:41:48.387Z",
       "source": "AISStream"
     },
     {
       "vesselName": "SPATHI",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "SPICA",
@@ -6204,7 +5929,7 @@
       "callsign": "PE7630",
       "aisDestination": "MERKSEM",
       "shipType": 79,
-      "identityReportedAt": "2026-09-25 21:52:20.661235311 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:40:20.285027994 +0000 UTC",
       "identitySource": "AISStream static data"
     },
     {
@@ -6226,20 +5951,6 @@
       "shipType": 0,
       "identityReportedAt": "2026-08-24 07:33:17.476906219 +0000 UTC",
       "identitySource": "AISStream static data"
-    },
-    {
-      "vesselName": "SSI DISCOVERY",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z",
-      "aisName": "SSI DISCOVERY",
-      "mmsi": "538010616",
-      "latitude": -34.51948,
-      "longitude": -58.34611,
-      "speed": 10.7,
-      "heading": 137,
-      "course": 138.3,
-      "reportedAt": "2026-07-30 20:04:14.809348287 +0000 UTC",
-      "receivedAt": "2026-07-30T20:04:16.695Z",
-      "source": "AISStream"
     },
     {
       "vesselName": "SSI FORMIDABLE",
@@ -6323,7 +6034,7 @@
     },
     {
       "vesselName": "STAR CANDY",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "STAR EXPLORER",
@@ -6347,7 +6058,7 @@
     },
     {
       "vesselName": "STAR LAMBADA",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "STAR LAMBADA",
       "mmsi": "636017386",
       "latitude": -34.75305,
@@ -6373,7 +6084,7 @@
     },
     {
       "vesselName": "STAR NASIA",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "STAR PISCES",
@@ -6395,11 +6106,7 @@
     },
     {
       "vesselName": "STAR TOKYO",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
-    },
-    {
-      "vesselName": "STAR VANCOUVER",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "STAR WESTPORT",
@@ -6482,10 +6189,6 @@
       "identitySource": "AISStream static data"
     },
     {
-      "vesselName": "STEEL MAGIC",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z"
-    },
-    {
       "vesselName": "STELLAR INDIGO",
       "lastLineupSeenAt": "2026-09-01T11:38:02.825Z",
       "aisName": "STELLAR INDIGO",
@@ -6534,7 +6237,7 @@
       "callsign": null,
       "aisDestination": null,
       "shipType": 0,
-      "identityReportedAt": "2026-09-25 12:06:25.111255478 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:42:24.44546914 +0000 UTC",
       "identitySource": "AISStream static data",
       "latitude": 33.75804,
       "longitude": -118.18606,
@@ -6551,27 +6254,27 @@
     },
     {
       "vesselName": "STOLT EBONY",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "STOLT EBONY",
       "mmsi": "255806423",
-      "latitude": -32.76292,
-      "longitude": -60.71912,
+      "latitude": -32.71716,
+      "longitude": -60.72533,
       "speed": 0,
-      "heading": 357,
-      "course": 4.5,
-      "reportedAt": "2026-09-25 21:53:22.088607964 +0000 UTC",
-      "receivedAt": "2026-09-25T21:53:28.567Z",
+      "heading": 344,
+      "course": 343.4,
+      "reportedAt": "2026-09-26 11:27:20.042484731 +0000 UTC",
+      "receivedAt": "2026-09-26T11:29:01.512Z",
       "source": "AISStream",
       "imo": "9744908",
       "callsign": "CQEM4",
       "aisDestination": "ARSLO",
       "shipType": 89,
-      "identityReportedAt": "2026-09-25 21:46:59.212816334 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:28:59.438795817 +0000 UTC",
       "identitySource": "AISStream static data"
     },
     {
       "vesselName": "STOLT OCELOT",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "STOLT ZULU",
@@ -6594,16 +6297,12 @@
       "source": "AISStream"
     },
     {
-      "vesselName": "STRATEGIC ALLIANCE",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z"
-    },
-    {
       "vesselName": "STRATEGIC ENTITY",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "STRATEGIC EXPLORER",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "STRATEGIC EXPLORER",
       "mmsi": "565607000",
       "latitude": -23.88072,
@@ -6625,11 +6324,11 @@
     },
     {
       "vesselName": "SW SAPPHIRE",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "SZARE SZEREGI",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "T JUNGFRAU",
@@ -6725,7 +6424,7 @@
     },
     {
       "vesselName": "TAKAO GALAXY",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "TALITHA",
@@ -6749,47 +6448,43 @@
     },
     {
       "vesselName": "TAMBLING",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "TAMBLING",
       "mmsi": "563298500",
       "imo": "9744063",
       "callsign": "9VLV3",
-      "aisDestination": "BR SSZ>BR SSZ",
+      "aisDestination": "BR SSZ>AR SLO",
       "shipType": 70,
-      "identityReportedAt": "2026-09-17 21:27:23.305039434 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:25:35.423773255 +0000 UTC",
       "identitySource": "AISStream static data",
-      "latitude": -33.14613,
-      "longitude": -60.46782,
-      "speed": 10.5,
-      "heading": 311,
-      "course": 320,
-      "reportedAt": "2026-09-25 21:52:18.425941938 +0000 UTC",
-      "receivedAt": "2026-09-25T21:52:20.209Z",
+      "latitude": -32.62522,
+      "longitude": -60.75339,
+      "speed": 0,
+      "heading": 349,
+      "course": 126.7,
+      "reportedAt": "2026-09-26 11:37:52.306121468 +0000 UTC",
+      "receivedAt": "2026-09-26T11:37:53.989Z",
       "source": "AISStream"
     },
     {
       "vesselName": "TAXIDIARA",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "TAXIDIARA",
       "mmsi": "215622000",
       "imo": "9331919",
       "callsign": "9HA5214",
       "aisDestination": "SAN LORENZO",
       "shipType": 70,
-      "identityReportedAt": "2026-09-25 21:49:50.854451682 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:25:51.214872035 +0000 UTC",
       "identitySource": "AISStream static data",
-      "latitude": -32.68189,
-      "longitude": -60.71007,
+      "latitude": -32.77241,
+      "longitude": -60.72056,
       "speed": 0,
-      "heading": 346,
-      "course": 256.8,
-      "reportedAt": "2026-09-25 21:39:11.072905583 +0000 UTC",
-      "receivedAt": "2026-09-25T21:49:52.572Z",
+      "heading": 337,
+      "course": 340.2,
+      "reportedAt": "2026-09-26 11:34:52.091844299 +0000 UTC",
+      "receivedAt": "2026-09-26T11:35:00.858Z",
       "source": "AISStream"
-    },
-    {
-      "vesselName": "TBN",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z"
     },
     {
       "vesselName": "TEAM TOMBI",
@@ -6833,7 +6528,7 @@
     },
     {
       "vesselName": "THRASYVOULOS V",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "THRASYVOULOS V",
       "mmsi": "538009967",
       "imo": "9767493",
@@ -6980,10 +6675,6 @@
       "identitySource": "AISStream static data"
     },
     {
-      "vesselName": "TORM DAVAO",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z"
-    },
-    {
       "vesselName": "TORM STELLAR",
       "lastLineupSeenAt": "2026-08-18T07:03:13.319Z"
     },
@@ -7010,18 +6701,6 @@
       "lastLineupSeenAt": "2026-09-08T11:17:43.857Z"
     },
     {
-      "vesselName": "TRADE",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z",
-      "aisName": "TRADE",
-      "mmsi": "538008236",
-      "imo": "9425942",
-      "callsign": "V7A2120",
-      "aisDestination": "EGPSE",
-      "shipType": 70,
-      "identityReportedAt": "2026-09-17 11:55:29.367350091 +0000 UTC",
-      "identitySource": "AISStream static data"
-    },
-    {
       "vesselName": "TRANSCENDEN AG",
       "lastLineupSeenAt": "2026-09-01T11:38:02.825Z"
     },
@@ -7041,7 +6720,7 @@
     },
     {
       "vesselName": "TRIGON TRADER",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "TRIGON TRADER",
       "mmsi": "372092000",
       "latitude": -33.12203,
@@ -7109,17 +6788,23 @@
     },
     {
       "vesselName": "TROUVAILLE",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "TROUVAILLE",
       "mmsi": "636023390",
-      "latitude": -33.94828,
-      "longitude": -58.84561,
+      "latitude": -32.77351,
+      "longitude": -60.71291,
       "speed": 0,
-      "heading": 306,
-      "course": 64.7,
-      "reportedAt": "2026-09-23 21:40:13.112989682 +0000 UTC",
-      "receivedAt": "2026-09-23T21:40:14.515Z",
-      "source": "AISStream"
+      "heading": 345,
+      "course": 122,
+      "reportedAt": "2026-09-26 11:39:24.333039005 +0000 UTC",
+      "receivedAt": "2026-09-26T11:39:25.694Z",
+      "source": "AISStream",
+      "imo": "9939632",
+      "callsign": "5LNM2",
+      "aisDestination": "SAN LORENZO",
+      "shipType": 80,
+      "identityReportedAt": "2026-09-26 11:25:36.85213845 +0000 UTC",
+      "identitySource": "AISStream static data"
     },
     {
       "vesselName": "TRUE BROTHER",
@@ -7130,7 +6815,7 @@
       "callsign": "8PAU5",
       "aisDestination": "GR JSY",
       "shipType": 70,
-      "identityReportedAt": "2026-09-25 21:41:50.702227917 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:35:51.340023573 +0000 UTC",
       "identitySource": "AISStream static data"
     },
     {
@@ -7175,22 +6860,22 @@
     },
     {
       "vesselName": "ULTRA LANIN",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "ULTRA LANIN",
       "mmsi": "352003693",
-      "latitude": -32.6679,
-      "longitude": -60.72032,
+      "latitude": -32.66794,
+      "longitude": -60.72039,
       "speed": 0,
-      "heading": 343,
-      "course": 66,
-      "reportedAt": "2026-09-25 21:49:02.640236609 +0000 UTC",
-      "receivedAt": "2026-09-25T21:49:10.544Z",
+      "heading": 345,
+      "course": 130.5,
+      "reportedAt": "2026-09-26 11:40:03.124949099 +0000 UTC",
+      "receivedAt": "2026-09-26T11:40:05.050Z",
       "source": "AISStream",
       "imo": "9984493",
       "callsign": "3E5802",
       "aisDestination": "ARSLO",
       "shipType": 70,
-      "identityReportedAt": "2026-09-25 21:47:50.606488915 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:35:50.586808836 +0000 UTC",
       "identitySource": "AISStream static data"
     },
     {
@@ -7233,7 +6918,23 @@
     },
     {
       "vesselName": "UNION MARK",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
+      "aisName": "UNION MARK",
+      "mmsi": "538008439",
+      "latitude": -32.69285,
+      "longitude": -60.7222,
+      "speed": 0.3,
+      "heading": 2,
+      "course": 185.5,
+      "reportedAt": "2026-09-26 11:37:03.427600831 +0000 UTC",
+      "receivedAt": "2026-09-26T11:39:52.795Z",
+      "source": "AISStream",
+      "imo": "9775153",
+      "callsign": "V7EX6",
+      "aisDestination": "AR SLO",
+      "shipType": 70,
+      "identityReportedAt": "2026-09-26 11:39:51.102301414 +0000 UTC",
+      "identitySource": "AISStream static data"
     },
     {
       "vesselName": "UNION ODYSSEY",
@@ -7257,16 +6958,16 @@
     },
     {
       "vesselName": "UNIQUE GUARDIAN",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "UNIQUE GUARDIAN",
       "mmsi": "477274100",
-      "latitude": -32.62567,
-      "longitude": -60.74793,
+      "latitude": -32.62566,
+      "longitude": -60.74799,
       "speed": 0,
-      "heading": 345,
+      "heading": 349,
       "course": 49.9,
-      "reportedAt": "2026-09-25 21:52:31.790482682 +0000 UTC",
-      "receivedAt": "2026-09-25T21:52:33.617Z",
+      "reportedAt": "2026-09-26 11:37:30.140374093 +0000 UTC",
+      "receivedAt": "2026-09-26T11:37:31.511Z",
       "source": "AISStream",
       "imo": "9540821",
       "callsign": "VRJM6",
@@ -7289,11 +6990,11 @@
     },
     {
       "vesselName": "V ALDO",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "V ISALOS",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "V ISALOS",
       "mmsi": "538007973",
       "latitude": -23.96186,
@@ -7306,9 +7007,9 @@
       "source": "AISStream",
       "imo": "9474254",
       "callsign": "V7NZ8",
-      "aisDestination": "BRSSZ",
+      "aisDestination": "AR RAM",
       "shipType": 70,
-      "identityReportedAt": "2026-09-25 21:53:23.32723722 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:29:24.344824714 +0000 UTC",
       "identitySource": "AISStream static data"
     },
     {
@@ -7333,7 +7034,17 @@
     },
     {
       "vesselName": "VANTAGE COMO",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
+      "aisName": "VANTAGE COMO",
+      "mmsi": "636021715",
+      "latitude": -33.13128,
+      "longitude": -60.4912,
+      "speed": 0,
+      "heading": 329,
+      "course": 187.7,
+      "reportedAt": "2026-09-26 11:26:51.140853965 +0000 UTC",
+      "receivedAt": "2026-09-26T11:26:52.910Z",
+      "source": "AISStream"
     },
     {
       "vesselName": "VENEZIA",
@@ -7357,7 +7068,7 @@
     },
     {
       "vesselName": "VERUDA",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "VERUDA",
       "mmsi": "238297000",
       "latitude": -23.96817,
@@ -7404,7 +7115,7 @@
       "callsign": "SG7750",
       "aisDestination": null,
       "shipType": 0,
-      "identityReportedAt": "2026-09-25 11:54:40.827767682 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:42:40.89709016 +0000 UTC",
       "identitySource": "AISStream static data"
     },
     {
@@ -7429,7 +7140,7 @@
     },
     {
       "vesselName": "VILLA DESTE",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "W-LUNA",
@@ -7457,30 +7168,30 @@
     },
     {
       "vesselName": "WEALTH ATHENA",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "WEI HE",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "WELLNESS DIVA",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "WELLNESS DIVA",
       "mmsi": "538012438",
-      "latitude": -32.69186,
-      "longitude": -60.72362,
+      "latitude": -32.6304,
+      "longitude": -60.74561,
       "speed": 0,
-      "heading": 353,
-      "course": 302.5,
-      "reportedAt": "2026-09-25 21:46:28.239438826 +0000 UTC",
-      "receivedAt": "2026-09-25T21:49:13.800Z",
+      "heading": 344,
+      "course": 72.6,
+      "reportedAt": "2026-09-26 11:26:54.346251669 +0000 UTC",
+      "receivedAt": "2026-09-26T11:31:05.915Z",
       "source": "AISStream",
       "imo": "1049352",
       "callsign": "V7B2850",
       "aisDestination": "AR SLO",
       "shipType": 70,
-      "identityReportedAt": "2026-09-25 21:49:04.251432839 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:31:04.167119948 +0000 UTC",
       "identitySource": "AISStream static data"
     },
     {
@@ -7492,7 +7203,7 @@
       "callsign": "VRWH4",
       "aisDestination": "ESLPA",
       "shipType": 70,
-      "identityReportedAt": "2026-09-25 21:37:07.301047846 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:35:17.210356385 +0000 UTC",
       "identitySource": "AISStream static data"
     },
     {
@@ -7536,7 +7247,7 @@
       "callsign": null,
       "aisDestination": null,
       "shipType": 0,
-      "identityReportedAt": "2026-09-25 21:48:02.690636795 +0000 UTC",
+      "identityReportedAt": "2026-09-26 11:42:01.455090391 +0000 UTC",
       "identitySource": "AISStream static data",
       "latitude": 57.70585,
       "longitude": 11.6581,
@@ -7549,11 +7260,21 @@
     },
     {
       "vesselName": "XING CHANG HAI",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
+      "aisName": "XING CHANG HAI",
+      "mmsi": "563179500",
+      "latitude": -33.12588,
+      "longitude": -60.49661,
+      "speed": 0.1,
+      "heading": 340,
+      "course": 157,
+      "reportedAt": "2026-09-26 11:24:53.158126019 +0000 UTC",
+      "receivedAt": "2026-09-26T11:24:55.037Z",
+      "source": "AISStream"
     },
     {
       "vesselName": "XT SEA LION",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "XT SEA LION",
       "mmsi": "636025467",
       "imo": "1042378",
@@ -7593,15 +7314,15 @@
     },
     {
       "vesselName": "YASA ALBATROSS",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "YASA LOTUS",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "YASSIN BEY",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "YC FORTITUDE",
@@ -7625,7 +7346,7 @@
     },
     {
       "vesselName": "YM PIONEER",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "YM QUEST",
@@ -7685,11 +7406,11 @@
     },
     {
       "vesselName": "ZAYD JAHAN",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z"
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z"
     },
     {
       "vesselName": "ZETA P",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "ZETA P.",
       "mmsi": "210777000",
       "latitude": -33.12659,
@@ -7708,20 +7429,8 @@
       "identitySource": "AISStream static data"
     },
     {
-      "vesselName": "ZHEN ZHU HAI",
-      "lastLineupSeenAt": "2026-08-12T07:51:32.433Z",
-      "aisName": "ZHEN ZHU HAI",
-      "mmsi": "477524900",
-      "imo": "9738088",
-      "callsign": "VROT8",
-      "aisDestination": "JORF LASFAR",
-      "shipType": 70,
-      "identityReportedAt": "2026-09-23 11:51:01.145913426 +0000 UTC",
-      "identitySource": "AISStream static data"
-    },
-    {
       "vesselName": "ZURICH STAR",
-      "lastLineupSeenAt": "2026-09-25T21:33:47.133Z",
+      "lastLineupSeenAt": "2026-09-26T11:23:24.231Z",
       "aisName": "ZURICH STAR",
       "mmsi": "538012696",
       "latitude": -33.04785,
